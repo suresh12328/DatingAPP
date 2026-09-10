@@ -142,18 +142,29 @@ export const StoryViewerModal: React.FC<StoryViewerModalProps> = ({
 
         {/* Media Container (Press to pause) */}
         <div
-          className="relative flex-1 w-full h-full flex items-center justify-center cursor-pointer overflow-hidden"
+          className="relative flex-1 w-full h-full flex items-center justify-center cursor-pointer overflow-hidden bg-black"
           onMouseDown={() => setIsPaused(true)}
           onMouseUp={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
         >
-          <img
-            src={currentStory.media_url}
-            alt="Story"
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover"
-          />
+          {currentStory.media_type === 'video' || /\.(mp4|webm|mov)$/i.test(currentStory.media_url) ? (
+            <video
+              src={currentStory.media_url}
+              autoPlay
+              playsInline
+              loop
+              muted={false}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <img
+              src={currentStory.media_url}
+              alt="Story"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+          )}
 
           {/* Text Overlay Sticker if present */}
           {currentStory.text_overlay && (

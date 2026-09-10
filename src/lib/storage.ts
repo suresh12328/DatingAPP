@@ -43,7 +43,7 @@ class ReactiveStore {
   private savedPostIds: { user_id: string; post_id: string }[] = [];
   private reports: Report[] = [];
   private blocks: Block[] = [];
-  private currentUserId: string = 'user-david';
+  private currentUserId: string = 'user-suresh';
 
   constructor() {
     this.loadFromStorage();
@@ -51,129 +51,85 @@ class ReactiveStore {
 
   private loadFromStorage() {
     try {
-      const storedProfiles = localStorage.getItem('lc_profiles');
-      const storedPosts = localStorage.getItem('lc_posts');
-      const storedStories = localStorage.getItem('lc_stories');
-      const storedReels = localStorage.getItem('lc_reels');
-      const storedMatches = localStorage.getItem('lc_matches');
-      const storedConnections = localStorage.getItem('lc_connections');
-      const storedNotifications = localStorage.getItem('lc_notifications');
-      const storedMessages = localStorage.getItem('lc_messages');
-      const storedLikes = localStorage.getItem('lc_dating_likes');
-      const storedPasses = localStorage.getItem('lc_dating_passes');
-      const storedSaved = localStorage.getItem('lc_saved_posts');
-      const storedReports = localStorage.getItem('lc_reports');
-      const storedBlocks = localStorage.getItem('lc_blocks');
-      const storedCurrentUser = localStorage.getItem('lc_current_user_id');
+      // ONLY ONE ACCOUNT in the entire app: Suresh Bohara
+      this.profiles = [...SEED_PROFILES];
+      this.currentUserId = 'user-suresh';
 
-      this.profiles = storedProfiles ? JSON.parse(storedProfiles) : [...SEED_PROFILES];
+      const storedPosts = typeof window !== 'undefined' ? localStorage.getItem('lc_posts') : null;
+      const storedStories = typeof window !== 'undefined' ? localStorage.getItem('lc_stories') : null;
+      const storedReels = typeof window !== 'undefined' ? localStorage.getItem('lc_reels') : null;
+      const storedNotifications = typeof window !== 'undefined' ? localStorage.getItem('lc_notifications') : null;
+
       this.posts = storedPosts ? JSON.parse(storedPosts) : [...SEED_POSTS];
       this.stories = storedStories ? JSON.parse(storedStories) : [...SEED_STORIES];
-      this.reels = storedReels ? JSON.parse(storedReels) : [...SEED_REELS];
-      this.matches = storedMatches ? JSON.parse(storedMatches) : [...SEED_MATCHES];
-      this.connections = storedConnections ? JSON.parse(storedConnections) : [...SEED_CONNECTIONS];
+      const isLegacyReel = (r: any) => {
+        if (!r || !r.id) return true;
+        const id = String(r.id);
+        const url = String(r.video_url || '');
+        return (
+          id.startsWith('reel-suresh-') ||
+          ['reel-1', 'reel-2', 'reel-3', 'reel-4', 'reel-5'].includes(id) ||
+          url.includes('mixkit.co') ||
+          url.includes('sarah-reel') ||
+          url.includes('daniela-reel') ||
+          url.includes('mirela-reel') ||
+          url.includes('patricia-reel') ||
+          url.includes('jessica-reel') ||
+          url.includes('1788763498232-277383')
+        );
+      };
+
+      const parsedReels = storedReels ? JSON.parse(storedReels) : [];
+      this.reels = Array.isArray(parsedReels) ? parsedReels.filter(r => !isLegacyReel(r)) : [];
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('lc_reels', JSON.stringify(this.reels));
+      }
       this.notifications = storedNotifications ? JSON.parse(storedNotifications) : [...SEED_NOTIFICATIONS];
-      this.messages = storedMessages ? JSON.parse(storedMessages) : this.generateInitialMessages();
-      this.datingLikes = storedLikes ? JSON.parse(storedLikes) : this.generateInitialLikes();
-      this.datingPasses = storedPasses ? JSON.parse(storedPasses) : [];
-      this.savedPostIds = storedSaved ? JSON.parse(storedSaved) : [{ user_id: 'user-david', post_id: 'post-2' }];
-      this.reports = storedReports ? JSON.parse(storedReports) : [];
-      this.blocks = storedBlocks ? JSON.parse(storedBlocks) : [];
-      this.currentUserId = storedCurrentUser || 'user-david';
+
+      const suresh = SEED_PROFILES[0];
+      this.posts.forEach(p => {
+        p.user_id = 'user-suresh';
+        p.author = suresh;
+        if (p.comments) {
+          p.comments.forEach(c => {
+            c.user_id = 'user-suresh';
+            c.author = suresh;
+          });
+        }
+      });
+
+      this.matches = [];
+      this.connections = [];
+      this.messages = [];
+      this.datingLikes = [];
+      this.datingPasses = [];
+      this.savedPostIds = [{ user_id: 'user-suresh', post_id: 'post-1' }];
+      this.reports = [];
+      this.blocks = [];
     } catch {
       this.profiles = [...SEED_PROFILES];
       this.posts = [...SEED_POSTS];
       this.stories = [...SEED_STORIES];
       this.reels = [...SEED_REELS];
-      this.matches = [...SEED_MATCHES];
-      this.connections = [...SEED_CONNECTIONS];
+      this.matches = [];
+      this.connections = [];
       this.notifications = [...SEED_NOTIFICATIONS];
-      this.messages = this.generateInitialMessages();
-      this.datingLikes = this.generateInitialLikes();
+      this.messages = [];
+      this.datingLikes = [];
       this.datingPasses = [];
-      this.savedPostIds = [{ user_id: 'user-david', post_id: 'post-2' }];
+      this.savedPostIds = [{ user_id: 'user-suresh', post_id: 'post-1' }];
       this.reports = [];
       this.blocks = [];
-      this.currentUserId = 'user-david';
+      this.currentUserId = 'user-suresh';
     }
   }
 
   private generateInitialLikes(): DatingLike[] {
-    return [
-      {
-        id: 'like-1',
-        from_user_id: 'user-sarah',
-        to_user_id: 'user-david',
-        is_super_like: false,
-        created_at: '2024-02-14T17:00:00Z'
-      },
-      {
-        id: 'like-2',
-        from_user_id: 'user-david',
-        to_user_id: 'user-sarah',
-        is_super_like: true,
-        created_at: '2024-02-14T18:00:00Z'
-      },
-      {
-        id: 'like-3',
-        from_user_id: 'user-jessica',
-        to_user_id: 'user-david',
-        is_super_like: false,
-        created_at: '2024-02-18T15:00:00Z'
-      },
-      {
-        id: 'like-4',
-        from_user_id: 'user-mirela',
-        to_user_id: 'user-david',
-        is_super_like: true,
-        created_at: '2024-02-18T11:00:00Z'
-      },
-      {
-        id: 'like-5',
-        from_user_id: 'user-daniela',
-        to_user_id: 'user-david',
-        is_super_like: false,
-        created_at: '2024-02-12T14:00:00Z'
-      },
-      {
-        id: 'like-6',
-        from_user_id: 'user-david',
-        to_user_id: 'user-daniela',
-        is_super_like: false,
-        created_at: '2024-02-12T14:20:00Z'
-      }
-    ];
+    return [];
   }
 
   private generateInitialMessages(): Message[] {
-    return [
-      {
-        id: 'msg-1',
-        conversation_id: 'conv-david-sarah',
-        sender_id: 'user-david',
-        receiver_id: 'user-sarah',
-        content: "Hey Sarah! Loved your art director bio. Have you been to the SFMOMA photography wing recently? 🎨",
-        created_at: '2024-02-14T18:15:00Z',
-        read_at: '2024-02-14T18:20:00Z'
-      },
-      {
-        id: 'msg-2',
-        conversation_id: 'conv-david-sarah',
-        sender_id: 'user-sarah',
-        receiver_id: 'user-david',
-        content: "Hey David! Yes, I was actually there two weeks ago for the modernist collection. It was mesmerizing!",
-        created_at: '2024-02-14T18:45:00Z',
-        read_at: '2024-02-14T18:50:00Z'
-      },
-      {
-        id: 'msg-3',
-        conversation_id: 'conv-david-sarah',
-        sender_id: 'user-sarah',
-        receiver_id: 'user-david',
-        content: "Would love to check out that new contemporary gallery opening this Friday!",
-        created_at: '2024-02-18T14:30:00Z'
-      }
-    ];
+    return [];
   }
 
   private saveToStorage() {
@@ -229,24 +185,70 @@ class ReactiveStore {
   }
 
   public getAllProfiles(): Profile[] {
-    return [...this.profiles];
+    return [this.getCurrentUser()];
   }
 
-  public getProfileById(id: string): Profile | undefined {
-    return this.profiles.find(p => p.id === id);
+  public getProfileById(_id: string): Profile | undefined {
+    return this.getCurrentUser();
   }
 
-  public getProfileByUsername(username: string): Profile | undefined {
-    return this.profiles.find(p => p.username.toLowerCase() === username.toLowerCase());
+  public getProfileByUsername(_username: string): Profile | undefined {
+    return this.getCurrentUser();
+  }
+
+  public syncProfiles(serverProfiles: Profile[]): void {
+    if (!serverProfiles || !serverProfiles.length) return;
+    const suresh = serverProfiles.find(p => p.id === 'user-suresh' || p.username === 'suresh_bohara') || serverProfiles[0];
+    if (suresh) {
+      this.profiles = [{ ...SEED_PROFILES[0], ...suresh, id: 'user-suresh', role: 'ADMIN' }];
+      this.saveToStorage();
+    }
+  }
+
+  public upsertProfile(profile: Profile): Profile {
+    if (!profile) return this.getCurrentUser();
+    // Enforce role policy: only Suresh can be ADMIN
+    const isSuresh = profile.id === 'user-suresh' || (profile.email && profile.email.toLowerCase().trim() === 'bohara.suresh8884@gmail.com');
+    const safeProfile = {
+      ...profile,
+      role: isSuresh ? ('ADMIN' as const) : ('USER' as const)
+    };
+
+    const idx = this.profiles.findIndex(p => p.id === safeProfile.id || (safeProfile.email && p.email?.toLowerCase() === safeProfile.email.toLowerCase()));
+    if (idx !== -1) {
+      this.profiles[idx] = { ...this.profiles[idx], ...safeProfile };
+      this.saveToStorage();
+      return this.profiles[idx];
+    } else {
+      this.profiles.unshift(safeProfile);
+      this.saveToStorage();
+      return safeProfile;
+    }
   }
 
   public updateProfile(id: string, updates: Partial<Profile>): Profile {
-    const idx = this.profiles.findIndex(p => p.id === id);
+    let idx = this.profiles.findIndex(p => p.id === id);
+    if (idx === -1 && updates.email) {
+      idx = this.profiles.findIndex(p => p.email?.toLowerCase() === updates.email!.toLowerCase());
+    }
+    if (idx === -1 && updates.username) {
+      idx = this.profiles.findIndex(p => p.username?.toLowerCase() === updates.username!.toLowerCase());
+    }
+    if (idx === -1 && this.currentUserId) {
+      idx = this.profiles.findIndex(p => p.id === this.currentUserId);
+    }
+
     if (idx !== -1) {
-      this.profiles[idx] = { ...this.profiles[idx], ...updates };
+      const target = this.profiles[idx];
+      const isSuresh = target.id === 'user-suresh' || (target.email && target.email.toLowerCase().trim() === 'bohara.suresh8884@gmail.com');
+      const safeUpdates = { ...updates };
+      if (!isSuresh && (safeUpdates.role === 'ADMIN' || safeUpdates.role === 'MODERATOR')) {
+        delete safeUpdates.role;
+      }
+      this.profiles[idx] = { ...this.profiles[idx], ...safeUpdates };
       // Also update author in posts/comments
       this.posts = this.posts.map(post => {
-        if (post.user_id === id) {
+        if (post.user_id === this.profiles[idx].id) {
           return { ...post, author: this.profiles[idx] };
         }
         return post;
@@ -254,7 +256,50 @@ class ReactiveStore {
       this.notify();
       return this.profiles[idx];
     }
-    throw new Error('Profile not found');
+
+    // Upsert seamlessly without throwing an error
+    const fallbackProfile: Profile = {
+      id: id || `user-${Date.now()}`,
+      email: (updates as any).email || '',
+      username: updates.username || (updates.full_name ? updates.full_name.toLowerCase().replace(/\s+/g, '_') : `user_${id}`),
+      full_name: updates.full_name || 'User',
+      avatar_url: updates.avatar_url || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+      cover_url: updates.cover_url || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+      bio: updates.bio || '',
+      age: updates.age || 24,
+      dob: updates.dob || '2000-01-01',
+      gender: updates.gender || 'WOMAN',
+      dating_preference: updates.dating_preference || 'EVERYONE',
+      location: updates.location || 'San Francisco, CA',
+      profession: updates.profession || '',
+      education: updates.education || '',
+      interests: updates.interests || ['Dating', 'Coffee'],
+      relationship_goal: updates.relationship_goal || 'LONG_TERM',
+      languages: updates.languages || ['English'],
+      height_cm: updates.height_cm || 170,
+      photos: updates.photos || [updates.avatar_url || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'],
+      lifestyle: updates.lifestyle || { drinking: 'SOCIALLY', smoking: 'NEVER', workout: 'OFTEN' },
+      is_verified: updates.is_verified ?? false,
+      email_verified: updates.email_verified ?? true,
+      is_online: true,
+      last_active: 'Just now',
+      role: updates.role || 'USER',
+      status: updates.status || 'ACTIVE',
+      privacy: updates.privacy || {
+        profileVisibility: 'PUBLIC',
+        whoCanMessageMe: 'EVERYONE',
+        whoCanConnect: 'EVERYONE',
+        datingVisible: true,
+        showOnlineStatus: true,
+        readReceipts: true
+      },
+      created_at: new Date().toISOString(),
+      ...updates
+    };
+
+    this.profiles.unshift(fallbackProfile);
+    this.notify();
+    return fallbackProfile;
   }
 
   public createProfile(profileData: Omit<Profile, 'id' | 'created_at' | 'is_online' | 'last_active' | 'status' | 'role' | 'privacy'>): Profile {
@@ -430,6 +475,7 @@ class ReactiveStore {
     if (post.user_id !== currentUser.id && currentUser.role !== 'ADMIN') return false;
 
     this.posts = this.posts.filter(p => p.id !== postId);
+    this.savedPostIds = this.savedPostIds.filter(sp => sp.post_id !== postId);
     this.notify();
     return true;
   }
@@ -532,8 +578,12 @@ class ReactiveStore {
   // --- Dating Engine & Match Logic ---
   public calculateCompatibility(userA: Profile, userB: Profile): number {
     let score = 70;
+    const aInterests = Array.isArray(userA?.interests) ? userA.interests : [];
+    const bInterests = Array.isArray(userB?.interests) ? userB.interests : [];
     // Shared interests bonus
-    const sharedInterests = userA.interests.filter(i => userB.interests.includes(i));
+    const sharedInterests = aInterests.filter(i =>
+      bInterests.some(bi => bi.toLowerCase() === i.toLowerCase())
+    );
     score += sharedInterests.length * 6;
 
     // Relationship goal alignment
@@ -572,12 +622,13 @@ class ReactiveStore {
     return this.profiles
       .filter(p => {
         if (excludedIds.has(p.id)) return false;
-        if (!p.privacy.datingVisible) return false;
+        if (p.privacy && p.privacy.datingVisible === false) return false;
         if (filters?.minAge && p.age < filters.minAge) return false;
         if (filters?.maxAge && p.age > filters.maxAge) return false;
         if (filters?.gender && filters.gender !== 'ALL' && p.gender !== filters.gender) return false;
         if (filters?.relationshipGoal && filters.relationshipGoal !== 'ALL' && p.relationship_goal !== filters.relationshipGoal) return false;
-        if (filters?.interest && !p.interests.some(i => i.toLowerCase().includes(filters.interest!.toLowerCase()))) return false;
+        const userInterests = p.interests || [];
+        if (filters?.interest && !userInterests.some(i => i.toLowerCase().includes(filters.interest!.toLowerCase()))) return false;
         return true;
       })
       .map(profile => {
@@ -827,9 +878,12 @@ class ReactiveStore {
     userMatches.forEach(match => {
       const otherUser = match.user1_id === currentUser.id ? match.user2 : match.user1;
       const convId = `conv-${[currentUser.id, otherUser.id].sort().join('-')}`;
+
       const convMessages = this.messages.filter(
-        m => (m.sender_id === currentUser.id && m.receiver_id === otherUser.id) ||
-             (m.sender_id === otherUser.id && m.receiver_id === currentUser.id)
+        m => !m.is_unsent &&
+             ((m.sender_id === currentUser.id && m.receiver_id === otherUser.id) ||
+              (m.sender_id === otherUser.id && m.receiver_id === currentUser.id) ||
+              m.conversation_id === convId)
       ).sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
 
       const lastMessage = convMessages[convMessages.length - 1];
@@ -839,6 +893,7 @@ class ReactiveStore {
         id: convId,
         participant_ids: [currentUser.id, otherUser.id],
         other_user: otherUser,
+        other_user_id: otherUser.id,
         is_dating_match: true,
         last_message: lastMessage,
         unread_count: unreadCount,
@@ -852,10 +907,13 @@ class ReactiveStore {
       if (conversationMap.has(otherUser.id)) return; // already in matches
 
       const convId = `conv-${[currentUser.id, otherUser.id].sort().join('-')}`;
+
       const convMessages = this.messages.filter(
-        m => (m.sender_id === currentUser.id && m.receiver_id === otherUser.id) ||
-             (m.sender_id === otherUser.id && m.receiver_id === currentUser.id)
-      ).sort((a, b) => new Date(a.created_at).getTime() - new Date(a.created_at).getTime());
+        m => !m.is_unsent &&
+             ((m.sender_id === currentUser.id && m.receiver_id === otherUser.id) ||
+              (m.sender_id === otherUser.id && m.receiver_id === currentUser.id) ||
+              m.conversation_id === convId)
+      ).sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
 
       const lastMessage = convMessages[convMessages.length - 1];
       const unreadCount = convMessages.filter(m => m.receiver_id === currentUser.id && !m.read_at).length;
@@ -864,6 +922,7 @@ class ReactiveStore {
         id: convId,
         participant_ids: [currentUser.id, otherUser.id],
         other_user: otherUser,
+        other_user_id: otherUser.id,
         is_dating_match: false,
         last_message: lastMessage,
         unread_count: unreadCount,
@@ -871,41 +930,120 @@ class ReactiveStore {
       });
     });
 
+    // Also include any other user in this.messages
+    this.messages.forEach(m => {
+      if (m.is_unsent) return;
+      const otherId = m.sender_id === currentUser.id ? m.receiver_id : (m.receiver_id === currentUser.id ? m.sender_id : null);
+      if (!otherId || otherId === currentUser.id || conversationMap.has(otherId)) return;
+      const otherUser = this.profiles.find(p => p.id === otherId);
+      if (!otherUser || otherUser.id === currentUser.id) return;
+      const convId = m.conversation_id || `conv-${[currentUser.id, otherUser.id].sort().join('-')}`;
+
+      const convMessages = this.messages.filter(
+        msg => !msg.is_unsent &&
+               ((msg.sender_id === currentUser.id && msg.receiver_id === otherUser.id) ||
+                (msg.sender_id === otherUser.id && msg.receiver_id === currentUser.id))
+      ).sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+      const lastMessage = convMessages[convMessages.length - 1];
+      const unreadCount = convMessages.filter(msg => msg.receiver_id === currentUser.id && !msg.read_at).length;
+      conversationMap.set(otherUser.id, {
+        id: convId,
+        participant_ids: [currentUser.id, otherUser.id],
+        other_user: otherUser,
+        other_user_id: otherUser.id,
+        is_dating_match: false,
+        last_message: lastMessage,
+        unread_count: unreadCount,
+        updated_at: lastMessage ? lastMessage.created_at : m.created_at
+      });
+    });
+
     return Array.from(conversationMap.values()).sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
   }
 
-  public getMessagesForUser(otherUserId: string): Message[] {
+  public getMessagesForUser(targetId: string): Message[] {
     const currentUser = this.getCurrentUser();
     return this.messages
       .filter(
-        m => (m.sender_id === currentUser.id && m.receiver_id === otherUserId) ||
-             (m.sender_id === otherUserId && m.receiver_id === currentUser.id)
+        m =>
+          !m.is_unsent &&
+          ((m.sender_id === currentUser.id && m.receiver_id === targetId) ||
+           (m.sender_id === targetId && m.receiver_id === currentUser.id))
       )
       .map(m => {
-        const sender = this.profiles.find(p => p.id === m.sender_id);
+        const sender = this.profiles.find(p => p.id === m.sender_id) || m.sender;
         return { ...m, sender };
       })
       .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
   }
 
-  public sendMessage(receiverId: string, content: string, mediaUrl?: string, replyToId?: string): Message {
+  public getMessagesForConversation(convId: string): Message[] {
     const currentUser = this.getCurrentUser();
-    const convId = `conv-${[currentUser.id, receiverId].sort().join('-')}`;
+    const conv = this.getConversations().find(c => c.id === convId);
+    const otherId = conv
+      ? (conv.participant_ids?.find(id => id !== currentUser.id) ||
+         (conv.other_user_id !== currentUser.id ? conv.other_user_id : undefined) ||
+         (conv.other_user?.id !== currentUser.id ? conv.other_user?.id : undefined))
+      : null;
+
+    return this.messages
+      .filter(m => {
+        if (m.is_unsent) return false;
+        // If we know the other user in this conversation, strictly enforce participant pair
+        if (otherId) {
+          return (m.sender_id === currentUser.id && m.receiver_id === otherId) ||
+                 (m.sender_id === otherId && m.receiver_id === currentUser.id) ||
+                 m.conversation_id === convId;
+        }
+        return m.conversation_id === convId;
+      })
+      .map(m => {
+        const sender = this.profiles.find(p => p.id === m.sender_id) || m.sender;
+        return { ...m, sender };
+      })
+      .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+  }
+
+  public sendMessage(receiverId: string, content: string, mediaUrl?: string, replyToId?: string, conversationId?: string): Message {
+    const currentUser = this.getCurrentUser();
+    let targetReceiver = receiverId;
+    if ((!targetReceiver || targetReceiver === currentUser.id) && conversationId) {
+      const conv = this.getConversations().find(c => c.id === conversationId);
+      if (conv) {
+        targetReceiver =
+          conv.participant_ids?.find(id => id !== currentUser.id) ||
+          (conv.other_user_id !== currentUser.id ? conv.other_user_id : undefined) ||
+          (conv.other_user?.id !== currentUser.id ? conv.other_user?.id : '') ||
+          '';
+      }
+    }
+    if (!targetReceiver || targetReceiver === currentUser.id) {
+      console.warn('Cannot send message to yourself or empty receiver:', targetReceiver);
+      targetReceiver = receiverId;
+    }
+    const convId = conversationId || `conv-${[currentUser.id, targetReceiver].sort().join('-')}`;
+    const targetUser = this.profiles.find(p => p.id === targetReceiver);
+    const isReceiverOnline = Boolean(targetUser?.is_online);
+    const now = new Date().toISOString();
+
     const newMsg: Message = {
       id: `msg-${Date.now()}`,
       conversation_id: convId,
       sender_id: currentUser.id,
-      receiver_id: receiverId,
+      receiver_id: targetReceiver,
       sender: currentUser,
       content,
       media_url: mediaUrl,
       reply_to_id: replyToId,
-      created_at: new Date().toISOString()
+      status: isReceiverOnline ? 'delivered' : 'sent',
+      delivered_at: isReceiverOnline ? now : undefined,
+      is_read: false,
+      created_at: now
     };
     this.messages.push(newMsg);
 
     this.createNotification(
-      receiverId,
+      targetReceiver,
       currentUser.id,
       'NEW_MESSAGE',
       'New Message',
@@ -917,12 +1055,34 @@ class ReactiveStore {
     return newMsg;
   }
 
-  public markMessagesRead(otherUserId: string) {
+  public markMessagesDelivered(receiverId: string, messageIds?: string[]): Message[] {
+    const now = new Date().toISOString();
+    const updated: Message[] = [];
+    this.messages.forEach(m => {
+      const matchReceiver = m.receiver_id === receiverId;
+      const matchId = !messageIds || messageIds.includes(m.id);
+      if (matchReceiver && matchId && m.status === 'sent') {
+        m.status = 'delivered';
+        m.delivered_at = now;
+        updated.push(m);
+      }
+    });
+    if (updated.length > 0) this.notify();
+    return updated;
+  }
+
+  public markMessagesRead(otherUserId: string, conversationId?: string) {
     const currentUser = this.getCurrentUser();
     let hasUpdated = false;
+    const now = new Date().toISOString();
     this.messages.forEach(m => {
-      if (m.sender_id === otherUserId && m.receiver_id === currentUser.id && !m.read_at) {
-        m.read_at = new Date().toISOString();
+      const matchByUsers = (!otherUserId || m.sender_id === otherUserId) && m.receiver_id === currentUser.id;
+      const matchByConv = Boolean(conversationId && m.conversation_id === conversationId && m.receiver_id === currentUser.id);
+      if ((matchByUsers || matchByConv) && m.status !== 'read') {
+        m.status = 'read';
+        m.read_at = m.read_at || now;
+        m.delivered_at = m.delivered_at || m.read_at;
+        m.is_read = true;
         hasUpdated = true;
       }
     });
@@ -936,6 +1096,14 @@ class ReactiveStore {
     msg.is_unsent = true;
     msg.content = 'This message was unsent';
     msg.media_url = undefined;
+    this.notify();
+    return true;
+  }
+
+  public updateMessageContent(messageId: string, newContent: string): boolean {
+    const msg = this.messages.find(m => m.id === messageId);
+    if (!msg) return false;
+    msg.content = newContent;
     this.notify();
     return true;
   }
@@ -1012,6 +1180,38 @@ class ReactiveStore {
     return reel.liked_by_me;
   }
 
+  public saveReel(reelId: string): boolean {
+    const reel = this.reels.find(r => r.id === reelId);
+    if (!reel) return false;
+    reel.saved_by_me = !reel.saved_by_me;
+    this.notify();
+    return reel.saved_by_me;
+  }
+
+  public shareReel(reelId: string): number {
+    const reel = this.reels.find(r => r.id === reelId);
+    if (!reel) return 0;
+    reel.shares_count = (reel.shares_count || 0) + 1;
+    this.notify();
+    return reel.shares_count;
+  }
+
+  public commentReel(reelId: string, content: string): any {
+    const reel = this.reels.find(r => r.id === reelId);
+    if (!reel) return null;
+    const currentUser = this.getCurrentUser();
+    reel.comments_count = (reel.comments_count || 0) + 1;
+    this.notify();
+    return {
+      id: `reel-cmt-${Date.now()}`,
+      user_id: currentUser.id,
+      author: currentUser,
+      content,
+      created_at: new Date().toISOString(),
+      likes_count: 0
+    };
+  }
+
   public createReel(videoUrl: string, caption: string, musicTitle: string = 'Original Audio'): Reel {
     const currentUser = this.getCurrentUser();
     const newReel: Reel = {
@@ -1032,6 +1232,17 @@ class ReactiveStore {
     this.reels.unshift(newReel);
     this.notify();
     return newReel;
+  }
+
+  public deleteReel(reelId: string): boolean {
+    const currentUser = this.getCurrentUser();
+    const reel = this.reels.find(r => r.id === reelId);
+    if (!reel) return false;
+    if (reel.user_id !== currentUser.id && currentUser.role !== 'ADMIN') return false;
+
+    this.reels = this.reels.filter(r => r.id !== reelId);
+    this.notify();
+    return true;
   }
 
   // --- Safety, Reports & Blocks ---

@@ -7,7 +7,6 @@ import {
   X,
   MessageCircle,
   MapPin,
-  Cake,
   TrendingUp
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
@@ -106,70 +105,72 @@ export const RightSidebar: React.FC = () => {
       )}
 
       {/* Suggested Matches Mini-Carousel / Showcase */}
-      <div className="bg-zinc-900 rounded-3xl border border-zinc-800 p-4 shadow-sm">
-        <div className="flex items-center justify-between mb-3">
-          <h4 className="text-xs font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
-            <Flame className="w-3.5 h-3.5 text-rose-500" />
-            <span>Suggested Matches</span>
-          </h4>
-          <button
-            onClick={() => navigate('dating')}
-            className="text-xs font-semibold text-pink-400 hover:text-pink-300"
-          >
-            Explore
-          </button>
-        </div>
-
-        <div className="space-y-3">
-          {suggestedMatches.map((matchUser) => (
-            <div
-              key={matchUser.id}
-              className="p-3 bg-zinc-800/40 rounded-2xl border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-2.5 group transition"
+      {suggestedMatches.length > 0 && (
+        <div className="bg-zinc-900 rounded-3xl border border-zinc-800 p-4 shadow-sm">
+          <div className="flex items-center justify-between mb-3">
+            <h4 className="text-xs font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
+              <Flame className="w-3.5 h-3.5 text-rose-500" />
+              <span>Suggested Matches</span>
+            </h4>
+            <button
+              onClick={() => navigate('dating')}
+              className="text-xs font-semibold text-pink-400 hover:text-pink-300"
             >
+              Explore
+            </button>
+          </div>
+
+          <div className="space-y-3">
+            {suggestedMatches.map((matchUser) => (
               <div
-                onClick={() => navigate('profile', { username: matchUser.username })}
-                className="flex items-center gap-2.5 min-w-0 flex-1 cursor-pointer"
+                key={matchUser.id}
+                className="p-3 bg-zinc-800/40 rounded-2xl border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-2.5 group transition"
               >
-                <Avatar
-                  src={matchUser.avatar_url}
-                  name={matchUser.full_name}
-                  size="md"
-                  isOnline={matchUser.is_online}
-                  isVerified={matchUser.is_verified}
-                />
-                <div className="min-w-0 flex-1">
-                  <div className="text-xs font-bold text-zinc-100 truncate group-hover:text-pink-400 transition">
-                    {matchUser.full_name}, {matchUser.age}
-                  </div>
-                  <div className="text-[11px] text-zinc-400 truncate flex items-center gap-1">
-                    <MapPin className="w-2.5 h-2.5" />
-                    <span>{matchUser.location.split(',')[0]}</span>
+                <div
+                  onClick={() => navigate('profile', { username: matchUser.username })}
+                  className="flex items-center gap-2.5 min-w-0 flex-1 cursor-pointer"
+                >
+                  <Avatar
+                    src={matchUser.avatar_url}
+                    name={matchUser.full_name}
+                    size="md"
+                    isOnline={matchUser.is_online}
+                    isVerified={matchUser.is_verified}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="text-xs font-bold text-zinc-100 truncate group-hover:text-pink-400 transition">
+                      {matchUser.full_name}, {matchUser.age}
+                    </div>
+                    <div className="text-[11px] text-zinc-400 truncate flex items-center gap-1">
+                      <MapPin className="w-2.5 h-2.5" />
+                      <span>{matchUser.location.split(',')[0]}</span>
+                    </div>
                   </div>
                 </div>
+
+                <button
+                  id={`right-sidebar-like-${matchUser.id}`}
+                  onClick={() => likeProfile(matchUser.id)}
+                  className="p-2 rounded-xl bg-zinc-800 hover:bg-pink-500 text-pink-400 hover:text-white shadow-xs border border-zinc-700 hover:border-pink-500 transition shrink-0"
+                  title="Send Like"
+                >
+                  <Flame className="w-4 h-4" />
+                </button>
               </div>
-
-              <button
-                id={`right-sidebar-like-${matchUser.id}`}
-                onClick={() => likeProfile(matchUser.id)}
-                className="p-2 rounded-xl bg-zinc-800 hover:bg-pink-500 text-pink-400 hover:text-white shadow-xs border border-zinc-700 hover:border-pink-500 transition shrink-0"
-                title="Send Like"
-              >
-                <Flame className="w-4 h-4" />
-              </button>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Birthday & Dating Milestones Reminder */}
-      <div className="p-3.5 bg-amber-950/20 rounded-3xl border border-amber-500/20 flex items-start gap-3 text-zinc-300">
-        <div className="p-2 bg-amber-500 text-white rounded-2xl shadow-xs shrink-0">
-          <Cake className="w-4 h-4" />
+      {/* Admin Highlight */}
+      <div className="p-3.5 bg-pink-950/20 rounded-3xl border border-pink-500/20 flex items-start gap-3 text-zinc-300">
+        <div className="p-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-2xl shadow-xs shrink-0">
+          <Sparkles className="w-4 h-4" />
         </div>
         <div className="text-xs">
-          <div className="font-bold text-zinc-100">Birthday Highlight</div>
+          <div className="font-bold text-zinc-100">LoveConnect Admin</div>
           <p className="text-[11px] text-zinc-400 mt-0.5">
-            <span className="font-semibold text-zinc-200">Mirela Rossi</span> has a birthday coming up this week. Send her a warm greeting! 🎂
+            Logged in as <span className="font-semibold text-pink-300">{currentUser.full_name}</span> (@{currentUser.username})
           </p>
         </div>
       </div>

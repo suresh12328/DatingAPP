@@ -1,0 +1,4213 @@
+{
+  "users": [
+    {
+      "id": "user-1789026547196",
+      "email": "xettri01@gmail.com",
+      "password_hash": "$2b$10$dCoHQp7.Ys8iJLpMlYNn1e1hq38KZovSp8o4/dpEoyRAsd9VVkLLm",
+      "username": "sapana_xettri",
+      "full_name": "Sapana Xettri",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "bio": "New member looking for authentic dating & connections ✨",
+      "age": 21,
+      "dob": "2005-01-15",
+      "gender": "WOMAN",
+      "sexual_orientation": "Straight",
+      "dating_preference": "EVERYONE",
+      "dating_preferences": {
+        "interested_in": "EVERYONE",
+        "age_range": {
+          "min": 18,
+          "max": 45
+        },
+        "max_distance_miles": 50,
+        "only_verified": false
+      },
+      "location": "San Francisco, CA",
+      "neighborhood": "Bay Area",
+      "profession": "Professional",
+      "education": "Graduate",
+      "interests": [
+        "Dating",
+        "Coffee",
+        "Music",
+        "Travel"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "looking_for": "A meaningful, genuine connection",
+      "languages": [
+        "English"
+      ],
+      "height_cm": 170,
+      "height": "5'7\"",
+      "photos": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "Pet lover"
+      },
+      "is_verified": false,
+      "email_verified": true,
+      "account_status": "ACTIVE",
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2026-09-10T07:49:07.196Z"
+    },
+    {
+      "id": "user-1788869368289",
+      "email": "xettri12@gmail.com",
+      "password_hash": "$2b$10$OWT7uNMwzc/InUUbzMS8ZONhK1l9QDjN5Xh81afjGhUVRnzV02cd6",
+      "username": "sapana_xettri",
+      "full_name": "Sapana Xettri",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "bio": "New member looking for authentic dating & connections ✨",
+      "age": 25,
+      "dob": "2001-06-15",
+      "gender": "WOMAN",
+      "sexual_orientation": "Straight",
+      "dating_preference": "EVERYONE",
+      "dating_preferences": {
+        "interested_in": "EVERYONE",
+        "age_range": {
+          "min": 18,
+          "max": 45
+        },
+        "max_distance_miles": 50,
+        "only_verified": false
+      },
+      "location": "San Francisco, CA",
+      "neighborhood": "Bay Area",
+      "profession": "Professional",
+      "education": "Graduate",
+      "interests": [
+        "Dating",
+        "Coffee",
+        "Music",
+        "Travel"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "looking_for": "A meaningful, genuine connection",
+      "languages": [
+        "English"
+      ],
+      "height_cm": 170,
+      "height": "5'7\"",
+      "photos": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "Pet lover"
+      },
+      "is_verified": false,
+      "email_verified": true,
+      "account_status": "ACTIVE",
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2026-09-08T12:09:28.289Z"
+    },
+    {
+      "id": "user-sarah",
+      "email": "sarah.miller@loveconnect.com",
+      "username": "sarah_m",
+      "full_name": "Sarah Miller",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+      "age": 26,
+      "dob": "1998-05-14",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Herald Square",
+      "profession": "Senior Art Director",
+      "education": "Rhode Island School of Design",
+      "interests": [
+        "Contemporary Art",
+        "Photography",
+        "Indie Music",
+        "Hiking",
+        "Cooking",
+        "Wine Tasting"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "height_cm": 168,
+      "photos": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "Golden Retriever lover",
+        "zodiac": "Taurus"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "user-suresh",
+      "email": "bohara.suresh8884@gmail.com",
+      "username": "suresh_bohara",
+      "full_name": "Suresh Bohara",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+      "age": 28,
+      "dob": "1996-03-22",
+      "gender": "MAN",
+      "dating_preference": "WOMEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Mission District",
+      "profession": "Lead System Administrator & Architect",
+      "education": "Stanford University",
+      "interests": [
+        "Tech & AI",
+        "Coffee Brewing",
+        "Rock Climbing",
+        "Photography",
+        "Travel",
+        "Cybersecurity"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "Nepali",
+        "Hindi"
+      ],
+      "height_cm": 182,
+      "photos": [
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "DAILY",
+        "pets": "1 rescue cat named Mochi",
+        "zodiac": "Aries"
+      },
+      "is_verified": true,
+      "email_verified": true,
+      "account_status": "ACTIVE",
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-10T08:00:00Z",
+      "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+    },
+    {
+      "id": "user-jessica",
+      "email": "jessica.k@loveconnect.com",
+      "username": "jessica_rose",
+      "full_name": "Jessica Vance",
+      "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Architectural designer & vintage collector. Searching for authentic conversations and Sunday morning farmers market dates. 🌿🏛️",
+      "age": 27,
+      "dob": "1997-09-08",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Rose Hill",
+      "profession": "Urban Designer",
+      "education": "UC Berkeley",
+      "interests": [
+        "Architecture",
+        "Urban Gardening",
+        "Vinyl Records",
+        "Yoga",
+        "Modern Literature"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "height_cm": 172,
+      "photos": [
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "Dog & Plant mom",
+        "zodiac": "Virgo"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "5m ago",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-18T14:30:00Z"
+    },
+    {
+      "id": "user-mirela",
+      "email": "mirela.b@loveconnect.com",
+      "username": "mirela_b",
+      "full_name": "Mirela Rossi",
+      "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Sommelier & travel journalist. Passionate about Mediterranean food, live acoustic jazz, and deep fireside conversations. 🍷✨",
+      "age": 29,
+      "dob": "1995-11-20",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "New York, NY",
+      "neighborhood": "Koreatown",
+      "profession": "Travel & Wine Journalist",
+      "education": "Columbia University",
+      "interests": [
+        "Wine Tasting",
+        "Gastronomy",
+        "Jazz",
+        "Italian Cinema",
+        "Travel Writing"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "Italian",
+        "Spanish"
+      ],
+      "height_cm": 165,
+      "photos": [
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "None",
+        "zodiac": "Scorpio"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "12m ago",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-20T11:00:00Z"
+    },
+    {
+      "id": "user-patricia",
+      "email": "patricia.h@loveconnect.com",
+      "username": "patricia_nomad",
+      "full_name": "Patricia Hayes",
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Ocean lover & documentary filmmaker. Currently working on marine conservation stories. Let’s catch a sunset paddle. 🌊🎥",
+      "age": 27,
+      "dob": "1997-04-12",
+      "gender": "WOMAN",
+      "dating_preference": "EVERYONE",
+      "location": "San Francisco, CA",
+      "neighborhood": "NoMad / Marina",
+      "profession": "Documentary Filmmaker",
+      "education": "USC School of Cinematic Arts",
+      "interests": [
+        "Surfing",
+        "Filmmaking",
+        "Scuba Diving",
+        "Podcasts",
+        "Campfires",
+        "Acoustic Guitar"
+      ],
+      "relationship_goal": "DATING",
+      "languages": [
+        "English",
+        "Portuguese"
+      ],
+      "height_cm": 170,
+      "photos": [
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "DAILY",
+        "pets": "Australian Shepherd",
+        "zodiac": "Pisces"
+      },
+      "is_verified": true,
+      "is_online": false,
+      "last_active": "30m ago",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-22T09:15:00Z"
+    },
+    {
+      "id": "user-daniela",
+      "email": "daniela.chef@loveconnect.com",
+      "username": "daniela_cooks",
+      "full_name": "Daniela Morales",
+      "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+      "age": 26,
+      "dob": "1998-08-30",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Kips Bay",
+      "profession": "Pastry Chef & Culinary Instructor",
+      "education": "Culinary Institute of America",
+      "interests": [
+        "Cooking",
+        "Baking",
+        "Pottery",
+        "Board Games",
+        "Farmers Markets",
+        "Cycling"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "height_cm": 163,
+      "photos": [
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "SOMETIMES",
+        "pets": "Cat",
+        "zodiac": "Virgo"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-25T16:00:00Z"
+    },
+    {
+      "id": "user-meow",
+      "email": "meow@loveconnect.com",
+      "username": "meow_catlover",
+      "full_name": "Meow Jenkins",
+      "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Feline enthusiast, matcha lover, and creative illustrator. Looking for cozy vibes, warm laughs, and good bookstore dates. 🐾✨",
+      "age": 24,
+      "dob": "2000-04-10",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Nob Hill",
+      "profession": "Creative Illustrator & Cat Cafe Host",
+      "education": "California College of the Arts",
+      "interests": [
+        "Cats & Pets",
+        "Digital Illustration",
+        "Cozy Games",
+        "Green Tea",
+        "Indie Animation"
+      ],
+      "relationship_goal": "DATING",
+      "languages": [
+        "English",
+        "Japanese"
+      ],
+      "height_cm": 162,
+      "photos": [
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "NEVER",
+        "smoking": "NEVER",
+        "workout": "SOMETIMES",
+        "pets": "2 rescue cats",
+        "zodiac": "Aries"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-02-10T10:00:00Z"
+    },
+    {
+      "id": "user-derek",
+      "email": "derek.w@loveconnect.com",
+      "username": "derek_w",
+      "full_name": "Derek Woods",
+      "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Product designer & backcountry camper. Looking for someone who laughs at terrible puns and loves mountain air. 🏔️🎒",
+      "age": 29,
+      "dob": "1995-02-18",
+      "gender": "MAN",
+      "dating_preference": "WOMEN",
+      "location": "Austin, TX",
+      "neighborhood": "South Congress",
+      "profession": "Principal Product Designer",
+      "education": "UT Austin",
+      "interests": [
+        "Camping",
+        "Product Design",
+        "Trail Running",
+        "Specialty Coffee",
+        "Vinyl"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "German"
+      ],
+      "height_cm": 185,
+      "photos": [
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "DAILY",
+        "pets": "Border Collie",
+        "zodiac": "Aquarius"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "1h ago",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-01-26T12:00:00Z"
+    },
+    {
+      "id": "user-susan",
+      "email": "susan.nyc@loveconnect.com",
+      "username": "susan_nyc",
+      "full_name": "Susan Thorne",
+      "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Biotech researcher by day, live indie concert lover by night. Seeking deep conversations and authentic connection. 🧬🎶",
+      "age": 28,
+      "dob": "1996-07-14",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "New York, NY",
+      "neighborhood": "Greenwich Village",
+      "profession": "Biotech Senior Scientist",
+      "education": "MIT",
+      "interests": [
+        "Science",
+        "Live Music",
+        "Bouldering",
+        "Podcasts",
+        "Museums"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "German"
+      ],
+      "height_cm": 167,
+      "photos": [
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "None",
+        "zodiac": "Cancer"
+      },
+      "is_verified": true,
+      "is_online": false,
+      "last_active": "2h ago",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-02-01T08:00:00Z"
+    },
+    {
+      "id": "user-micheal",
+      "email": "micheal.s@loveconnect.com",
+      "username": "micheal_sf",
+      "full_name": "Micheal Sterling",
+      "avatar_url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Landscape architect, espresso nerd, and vinyl record collector. Tell me your top 3 comfort movies! ☕🌱",
+      "age": 28,
+      "dob": "1996-01-19",
+      "gender": "MAN",
+      "dating_preference": "WOMEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Hayes Valley",
+      "profession": "Landscape Architect",
+      "education": "Cornell University",
+      "interests": [
+        "Design",
+        "Botany",
+        "Cinema",
+        "Espresso",
+        "Cycling"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English"
+      ],
+      "height_cm": 180,
+      "photos": [
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "SOCIALLY",
+        "smoking": "NEVER",
+        "workout": "OFTEN",
+        "pets": "Corgi",
+        "zodiac": "Capricorn"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-02-02T10:00:00Z"
+    },
+    {
+      "id": "user-emma",
+      "email": "emma.hart@loveconnect.com",
+      "username": "emma_hart",
+      "full_name": "Emma Hart",
+      "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+      "cover_url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "bio": "Interior stylist and plant fanatic. Creating cozy spaces and cherishing heartfelt conversations over matcha lattes. 🍵🌿",
+      "age": 25,
+      "dob": "1999-06-11",
+      "gender": "WOMAN",
+      "dating_preference": "MEN",
+      "location": "San Francisco, CA",
+      "neighborhood": "Pacific Heights",
+      "profession": "Interior Designer",
+      "education": "Parsons School of Design",
+      "interests": [
+        "Interior Decor",
+        "Ceramics",
+        "Matcha",
+        "Pilates",
+        "Thrifting"
+      ],
+      "relationship_goal": "LONG_TERM",
+      "languages": [
+        "English",
+        "Japanese"
+      ],
+      "height_cm": 165,
+      "photos": [
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+      ],
+      "lifestyle": {
+        "drinking": "NEVER",
+        "smoking": "NEVER",
+        "workout": "DAILY",
+        "pets": "2 Siamese cats",
+        "zodiac": "Gemini"
+      },
+      "is_verified": true,
+      "is_online": true,
+      "last_active": "Just now",
+      "role": "USER",
+      "status": "ACTIVE",
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "whoCanMessageMe": "EVERYONE",
+        "whoCanConnect": "EVERYONE",
+        "datingVisible": true,
+        "showOnlineStatus": true,
+        "readReceipts": true
+      },
+      "created_at": "2024-02-03T11:00:00Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-1",
+      "user_id": "user-daniela",
+      "author": {
+        "id": "user-daniela",
+        "email": "daniela.chef@loveconnect.com",
+        "username": "daniela_cooks",
+        "full_name": "Daniela Morales",
+        "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+        "age": 26,
+        "dob": "1998-08-30",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Kips Bay",
+        "profession": "Pastry Chef & Culinary Instructor",
+        "education": "Culinary Institute of America",
+        "interests": [
+          "Cooking",
+          "Baking",
+          "Pottery",
+          "Board Games",
+          "Farmers Markets",
+          "Cycling"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 163,
+        "photos": [
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "Cat",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-25T16:00:00Z"
+      },
+      "content": "I'm looking for a reliable recipe for a potato casserole with wild mushrooms — I had it while on vacation, and it was phenomenal. There are plenty of recipes on the Internet, but I somehow don't trust them: baking time of 20 minutes for raw ingredients doesn't seem quite right to me... Any home cooks here with tried-and-true secrets? 🍄🥔",
+      "media": [
+        {
+          "url": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
+          "type": "image"
+        }
+      ],
+      "feeling": "Craving good comfort food 🍲",
+      "location": "San Francisco, CA",
+      "likes_count": 24,
+      "comments_count": 8,
+      "shares_count": 3,
+      "saved_by_me": false,
+      "liked_by_me": false,
+      "privacy": "PUBLIC",
+      "created_at": "2024-02-18T14:30:00Z",
+      "comments": [
+        {
+          "id": "c-1",
+          "post_id": "post-1",
+          "user_id": "user-sarah",
+          "author": {
+            "id": "user-sarah",
+            "email": "sarah.miller@loveconnect.com",
+            "username": "sarah_m",
+            "full_name": "Sarah Miller",
+            "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+            "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+            "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+            "age": 26,
+            "dob": "1998-05-14",
+            "gender": "WOMAN",
+            "dating_preference": "MEN",
+            "location": "San Francisco, CA",
+            "neighborhood": "Herald Square",
+            "profession": "Senior Art Director",
+            "education": "Rhode Island School of Design",
+            "interests": [
+              "Contemporary Art",
+              "Photography",
+              "Indie Music",
+              "Hiking",
+              "Cooking",
+              "Wine Tasting"
+            ],
+            "relationship_goal": "LONG_TERM",
+            "languages": [
+              "English",
+              "French"
+            ],
+            "height_cm": 168,
+            "photos": [
+              "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+            ],
+            "lifestyle": {
+              "drinking": "SOCIALLY",
+              "smoking": "NEVER",
+              "workout": "OFTEN",
+              "pets": "Golden Retriever lover",
+              "zodiac": "Taurus"
+            },
+            "is_verified": true,
+            "is_online": true,
+            "last_active": "Just now",
+            "role": "USER",
+            "status": "ACTIVE",
+            "privacy": {
+              "profileVisibility": "PUBLIC",
+              "whoCanMessageMe": "EVERYONE",
+              "whoCanConnect": "EVERYONE",
+              "datingVisible": true,
+              "showOnlineStatus": true,
+              "readReceipts": true
+            },
+            "created_at": "2024-01-15T10:00:00Z"
+          },
+          "content": "Parboil the sliced potatoes for 6 minutes before layering with thyme, garlic cream, and chanterelles! Then bake for 45 mins at 375°F until bubbly and golden. Turns out heavenly every single time! ✨",
+          "created_at": "2024-02-18T15:10:00Z",
+          "likes_count": 5,
+          "liked_by_me": true,
+          "replies": [
+            {
+              "id": "cr-1",
+              "comment_id": "c-1",
+              "user_id": "user-daniela",
+              "author": {
+                "id": "user-daniela",
+                "email": "daniela.chef@loveconnect.com",
+                "username": "daniela_cooks",
+                "full_name": "Daniela Morales",
+                "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+                "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+                "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+                "age": 26,
+                "dob": "1998-08-30",
+                "gender": "WOMAN",
+                "dating_preference": "MEN",
+                "location": "San Francisco, CA",
+                "neighborhood": "Kips Bay",
+                "profession": "Pastry Chef & Culinary Instructor",
+                "education": "Culinary Institute of America",
+                "interests": [
+                  "Cooking",
+                  "Baking",
+                  "Pottery",
+                  "Board Games",
+                  "Farmers Markets",
+                  "Cycling"
+                ],
+                "relationship_goal": "LONG_TERM",
+                "languages": [
+                  "English",
+                  "Spanish"
+                ],
+                "height_cm": 163,
+                "photos": [
+                  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+                  "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+                ],
+                "lifestyle": {
+                  "drinking": "SOCIALLY",
+                  "smoking": "NEVER",
+                  "workout": "SOMETIMES",
+                  "pets": "Cat",
+                  "zodiac": "Virgo"
+                },
+                "is_verified": true,
+                "is_online": true,
+                "last_active": "Just now",
+                "role": "USER",
+                "status": "ACTIVE",
+                "privacy": {
+                  "profileVisibility": "PUBLIC",
+                  "whoCanMessageMe": "EVERYONE",
+                  "whoCanConnect": "EVERYONE",
+                  "datingVisible": true,
+                  "showOnlineStatus": true,
+                  "readReceipts": true
+                },
+                "created_at": "2024-01-25T16:00:00Z"
+              },
+              "content": "Sarah, you're an absolute lifesaver! Trying this tonight with fresh rosemary as well! 💛",
+              "created_at": "2024-02-18T15:25:00Z",
+              "likes_count": 2,
+              "liked_by_me": false
+            }
+          ]
+        },
+        {
+          "id": "c-2",
+          "post_id": "post-1",
+          "user_id": "user-suresh",
+          "author": {
+            "id": "user-suresh",
+            "email": "bohara.suresh8884@gmail.com",
+            "username": "suresh_bohara",
+            "full_name": "Suresh Bohara",
+            "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+            "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+            "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+            "age": 28,
+            "dob": "1996-03-22",
+            "gender": "MAN",
+            "dating_preference": "WOMEN",
+            "location": "San Francisco, CA",
+            "neighborhood": "Mission District",
+            "profession": "Lead System Administrator & Architect",
+            "education": "Stanford University",
+            "interests": [
+              "Tech & AI",
+              "Coffee Brewing",
+              "Rock Climbing",
+              "Photography",
+              "Travel",
+              "Cybersecurity"
+            ],
+            "relationship_goal": "LONG_TERM",
+            "languages": [
+              "English",
+              "Nepali",
+              "Hindi"
+            ],
+            "height_cm": 182,
+            "photos": [
+              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+            ],
+            "lifestyle": {
+              "drinking": "SOCIALLY",
+              "smoking": "NEVER",
+              "workout": "DAILY",
+              "pets": "1 rescue cat named Mochi",
+              "zodiac": "Aries"
+            },
+            "is_verified": true,
+            "email_verified": true,
+            "account_status": "ACTIVE",
+            "is_online": true,
+            "last_active": "Just now",
+            "role": "ADMIN",
+            "status": "ACTIVE",
+            "privacy": {
+              "profileVisibility": "PUBLIC",
+              "whoCanMessageMe": "EVERYONE",
+              "whoCanConnect": "EVERYONE",
+              "datingVisible": true,
+              "showOnlineStatus": true,
+              "readReceipts": true
+            },
+            "created_at": "2024-01-10T08:00:00Z",
+            "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+          },
+          "content": "Definitely parboil or slice razor thin on a mandoline. Also a touch of gruyère on top makes magic happen.",
+          "created_at": "2024-02-18T16:00:00Z",
+          "likes_count": 3,
+          "liked_by_me": false,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "post-2",
+      "user_id": "user-sarah",
+      "author": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "content": "Golden hour in Marin Headlands never disappoints. Spent the afternoon sketching the coastline and catching the salty breeze. What’s everyone’s favorite weekend escape when the city gets too hectic? 🌅🎨",
+      "media": [
+        {
+          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+          "type": "image"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+          "type": "image"
+        }
+      ],
+      "feeling": "Peaceful & inspired ✨",
+      "location": "Marin Headlands, CA",
+      "likes_count": 42,
+      "comments_count": 6,
+      "shares_count": 5,
+      "saved_by_me": true,
+      "liked_by_me": true,
+      "privacy": "PUBLIC",
+      "created_at": "2024-02-17T18:45:00Z",
+      "comments": [
+        {
+          "id": "c-3",
+          "post_id": "post-2",
+          "user_id": "user-jessica",
+          "author": {
+            "id": "user-jessica",
+            "email": "jessica.k@loveconnect.com",
+            "username": "jessica_rose",
+            "full_name": "Jessica Vance",
+            "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+            "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+            "bio": "Architectural designer & vintage collector. Searching for authentic conversations and Sunday morning farmers market dates. 🌿🏛️",
+            "age": 27,
+            "dob": "1997-09-08",
+            "gender": "WOMAN",
+            "dating_preference": "MEN",
+            "location": "San Francisco, CA",
+            "neighborhood": "Rose Hill",
+            "profession": "Urban Designer",
+            "education": "UC Berkeley",
+            "interests": [
+              "Architecture",
+              "Urban Gardening",
+              "Vinyl Records",
+              "Yoga",
+              "Modern Literature"
+            ],
+            "relationship_goal": "LONG_TERM",
+            "languages": [
+              "English",
+              "Spanish"
+            ],
+            "height_cm": 172,
+            "photos": [
+              "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+            ],
+            "lifestyle": {
+              "drinking": "SOCIALLY",
+              "smoking": "NEVER",
+              "workout": "OFTEN",
+              "pets": "Dog & Plant mom",
+              "zodiac": "Virgo"
+            },
+            "is_verified": true,
+            "is_online": true,
+            "last_active": "5m ago",
+            "role": "USER",
+            "status": "ACTIVE",
+            "privacy": {
+              "profileVisibility": "PUBLIC",
+              "whoCanMessageMe": "EVERYONE",
+              "whoCanConnect": "EVERYONE",
+              "datingVisible": true,
+              "showOnlineStatus": true,
+              "readReceipts": true
+            },
+            "created_at": "2024-01-18T14:30:00Z"
+          },
+          "content": "Those colors are breathtaking! Mount Tamalpais above the fog line is my personal sanctuary.",
+          "created_at": "2024-02-17T19:00:00Z",
+          "likes_count": 4,
+          "liked_by_me": false,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "post-3",
+      "user_id": "user-suresh",
+      "author": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "content": "Dialed in a fresh natural Ethiopian Yirgacheffe this morning on the pour-over: notes of wild blueberry, jasmine, and bergamot. Brewing coffee has genuinely become my favorite form of meditation. ☕✨",
+      "media": [
+        {
+          "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+          "type": "image"
+        }
+      ],
+      "feeling": "Energized & focused ☕",
+      "location": "San Francisco, CA",
+      "likes_count": 31,
+      "comments_count": 4,
+      "shares_count": 2,
+      "saved_by_me": false,
+      "liked_by_me": false,
+      "privacy": "PUBLIC",
+      "created_at": "2024-02-16T09:15:00Z",
+      "comments": []
+    },
+    {
+      "id": "post-4",
+      "user_id": "user-patricia",
+      "author": {
+        "id": "user-patricia",
+        "email": "patricia.h@loveconnect.com",
+        "username": "patricia_nomad",
+        "full_name": "Patricia Hayes",
+        "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Ocean lover & documentary filmmaker. Currently working on marine conservation stories. Let’s catch a sunset paddle. 🌊🎥",
+        "age": 27,
+        "dob": "1997-04-12",
+        "gender": "WOMAN",
+        "dating_preference": "EVERYONE",
+        "location": "San Francisco, CA",
+        "neighborhood": "NoMad / Marina",
+        "profession": "Documentary Filmmaker",
+        "education": "USC School of Cinematic Arts",
+        "interests": [
+          "Surfing",
+          "Filmmaking",
+          "Scuba Diving",
+          "Podcasts",
+          "Campfires",
+          "Acoustic Guitar"
+        ],
+        "relationship_goal": "DATING",
+        "languages": [
+          "English",
+          "Portuguese"
+        ],
+        "height_cm": 170,
+        "photos": [
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "Australian Shepherd",
+          "zodiac": "Pisces"
+        },
+        "is_verified": true,
+        "is_online": false,
+        "last_active": "30m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-22T09:15:00Z"
+      },
+      "content": "Wrapped filming on day 4 of our Monterey Bay kelp forest project! Floating alongside sea otters and harbor seals reminded me why we do what we do. LoveConnect community, let's keep protecting our blue planet. 🌊🐋",
+      "media": [
+        {
+          "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+          "type": "image"
+        }
+      ],
+      "feeling": "Grateful & ocean-struck 💙",
+      "location": "Monterey Bay, CA",
+      "likes_count": 58,
+      "comments_count": 11,
+      "shares_count": 9,
+      "saved_by_me": false,
+      "liked_by_me": true,
+      "privacy": "PUBLIC",
+      "created_at": "2024-02-15T20:10:00Z",
+      "comments": []
+    }
+  ],
+  "stories": [
+    {
+      "id": "story-1",
+      "user_id": "user-sarah",
+      "author": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "media_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "media_type": "image",
+      "text_overlay": "Sunny studio mornings 🎨✨",
+      "views_count": 64,
+      "created_at": "2026-09-08T09:08:49.599Z",
+      "expires_at": "2026-09-09T09:08:49.600Z",
+      "reactions": [
+        {
+          "user_id": "user-suresh",
+          "emoji": "❤️"
+        },
+        {
+          "user_id": "user-jessica",
+          "emoji": "🔥"
+        }
+      ]
+    },
+    {
+      "id": "story-2",
+      "user_id": "user-mirela",
+      "author": {
+        "id": "user-mirela",
+        "email": "mirela.b@loveconnect.com",
+        "username": "mirela_b",
+        "full_name": "Mirela Rossi",
+        "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Sommelier & travel journalist. Passionate about Mediterranean food, live acoustic jazz, and deep fireside conversations. 🍷✨",
+        "age": 29,
+        "dob": "1995-11-20",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "New York, NY",
+        "neighborhood": "Koreatown",
+        "profession": "Travel & Wine Journalist",
+        "education": "Columbia University",
+        "interests": [
+          "Wine Tasting",
+          "Gastronomy",
+          "Jazz",
+          "Italian Cinema",
+          "Travel Writing"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Italian",
+          "Spanish"
+        ],
+        "height_cm": 165,
+        "photos": [
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "None",
+          "zodiac": "Scorpio"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "12m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-20T11:00:00Z"
+      },
+      "media_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80",
+      "media_type": "image",
+      "text_overlay": "Natural orange wine flight in Brooklyn 🍷",
+      "views_count": 89,
+      "created_at": "2026-09-08T07:08:49.600Z",
+      "expires_at": "2026-09-09T07:08:49.600Z",
+      "reactions": [
+        {
+          "user_id": "user-sarah",
+          "emoji": "😍"
+        }
+      ]
+    },
+    {
+      "id": "story-3",
+      "user_id": "user-jessica",
+      "author": {
+        "id": "user-jessica",
+        "email": "jessica.k@loveconnect.com",
+        "username": "jessica_rose",
+        "full_name": "Jessica Vance",
+        "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Architectural designer & vintage collector. Searching for authentic conversations and Sunday morning farmers market dates. 🌿🏛️",
+        "age": 27,
+        "dob": "1997-09-08",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Rose Hill",
+        "profession": "Urban Designer",
+        "education": "UC Berkeley",
+        "interests": [
+          "Architecture",
+          "Urban Gardening",
+          "Vinyl Records",
+          "Yoga",
+          "Modern Literature"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 172,
+        "photos": [
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Dog & Plant mom",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "5m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-18T14:30:00Z"
+      },
+      "media_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "media_type": "image",
+      "text_overlay": "Exploring old Victorian architecture 🌿",
+      "views_count": 52,
+      "created_at": "2026-09-08T04:08:49.600Z",
+      "expires_at": "2026-09-09T04:08:49.600Z",
+      "reactions": []
+    },
+    {
+      "id": "story-4",
+      "user_id": "user-patricia",
+      "author": {
+        "id": "user-patricia",
+        "email": "patricia.h@loveconnect.com",
+        "username": "patricia_nomad",
+        "full_name": "Patricia Hayes",
+        "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Ocean lover & documentary filmmaker. Currently working on marine conservation stories. Let’s catch a sunset paddle. 🌊🎥",
+        "age": 27,
+        "dob": "1997-04-12",
+        "gender": "WOMAN",
+        "dating_preference": "EVERYONE",
+        "location": "San Francisco, CA",
+        "neighborhood": "NoMad / Marina",
+        "profession": "Documentary Filmmaker",
+        "education": "USC School of Cinematic Arts",
+        "interests": [
+          "Surfing",
+          "Filmmaking",
+          "Scuba Diving",
+          "Podcasts",
+          "Campfires",
+          "Acoustic Guitar"
+        ],
+        "relationship_goal": "DATING",
+        "languages": [
+          "English",
+          "Portuguese"
+        ],
+        "height_cm": 170,
+        "photos": [
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "Australian Shepherd",
+          "zodiac": "Pisces"
+        },
+        "is_verified": true,
+        "is_online": false,
+        "last_active": "30m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-22T09:15:00Z"
+      },
+      "media_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "media_type": "image",
+      "text_overlay": "Catching sunset sets at Ocean Beach 🏄‍♀️",
+      "views_count": 110,
+      "created_at": "2026-09-08T01:08:49.600Z",
+      "expires_at": "2026-09-09T01:08:49.600Z",
+      "reactions": []
+    }
+  ],
+  "reels": [],
+  "matches": [
+    {
+      "id": "match-1",
+      "user1_id": "user-suresh",
+      "user2_id": "user-sarah",
+      "user1": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "user2": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "created_at": "2024-02-14T18:00:00Z",
+      "last_message": "Would love to check out that new contemporary gallery opening this Friday!",
+      "last_message_time": "2h ago",
+      "unread_count": 1,
+      "compatibility_score": 96
+    },
+    {
+      "id": "match-2",
+      "user1_id": "user-suresh",
+      "user2_id": "user-daniela",
+      "user1": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "user2": {
+        "id": "user-daniela",
+        "email": "daniela.chef@loveconnect.com",
+        "username": "daniela_cooks",
+        "full_name": "Daniela Morales",
+        "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+        "age": 26,
+        "dob": "1998-08-30",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Kips Bay",
+        "profession": "Pastry Chef & Culinary Instructor",
+        "education": "Culinary Institute of America",
+        "interests": [
+          "Cooking",
+          "Baking",
+          "Pottery",
+          "Board Games",
+          "Farmers Markets",
+          "Cycling"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 163,
+        "photos": [
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "Cat",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-25T16:00:00Z"
+      },
+      "created_at": "2024-02-12T14:20:00Z",
+      "last_message": "That sourdough starter recipe was incredible, thanks Suresh!",
+      "last_message_time": "Yesterday",
+      "unread_count": 0,
+      "compatibility_score": 88
+    },
+    {
+      "id": "match-3",
+      "user1_id": "user-suresh",
+      "user2_id": "user-meow",
+      "user1": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "user2": {
+        "id": "user-meow",
+        "email": "meow@loveconnect.com",
+        "username": "meow_catlover",
+        "full_name": "Meow Jenkins",
+        "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Feline enthusiast, matcha lover, and creative illustrator. Looking for cozy vibes, warm laughs, and good bookstore dates. 🐾✨",
+        "age": 24,
+        "dob": "2000-04-10",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Nob Hill",
+        "profession": "Creative Illustrator & Cat Cafe Host",
+        "education": "California College of the Arts",
+        "interests": [
+          "Cats & Pets",
+          "Digital Illustration",
+          "Cozy Games",
+          "Green Tea",
+          "Indie Animation"
+        ],
+        "relationship_goal": "DATING",
+        "languages": [
+          "English",
+          "Japanese"
+        ],
+        "height_cm": 162,
+        "photos": [
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "NEVER",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "2 rescue cats",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-02-10T10:00:00Z"
+      },
+      "created_at": "2024-02-15T12:00:00Z",
+      "compatibility_score": 92
+    }
+  ],
+  "connections": [
+    {
+      "id": "conn-1",
+      "requester_id": "user-micheal",
+      "receiver_id": "user-suresh",
+      "requester": {
+        "id": "user-micheal",
+        "email": "micheal.s@loveconnect.com",
+        "username": "micheal_sf",
+        "full_name": "Micheal Sterling",
+        "avatar_url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Landscape architect, espresso nerd, and vinyl record collector. Tell me your top 3 comfort movies! ☕🌱",
+        "age": 28,
+        "dob": "1996-01-19",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Hayes Valley",
+        "profession": "Landscape Architect",
+        "education": "Cornell University",
+        "interests": [
+          "Design",
+          "Botany",
+          "Cinema",
+          "Espresso",
+          "Cycling"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English"
+        ],
+        "height_cm": 180,
+        "photos": [
+          "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Corgi",
+          "zodiac": "Capricorn"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-02-02T10:00:00Z"
+      },
+      "receiver": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "status": "ACCEPTED",
+      "created_at": "2024-02-05T10:00:00Z"
+    },
+    {
+      "id": "conn-2",
+      "requester_id": "user-derek",
+      "receiver_id": "user-suresh",
+      "requester": {
+        "id": "user-derek",
+        "email": "derek.w@loveconnect.com",
+        "username": "derek_w",
+        "full_name": "Derek Woods",
+        "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Product designer & backcountry camper. Looking for someone who laughs at terrible puns and loves mountain air. 🏔️🎒",
+        "age": 29,
+        "dob": "1995-02-18",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "Austin, TX",
+        "neighborhood": "South Congress",
+        "profession": "Principal Product Designer",
+        "education": "UT Austin",
+        "interests": [
+          "Camping",
+          "Product Design",
+          "Trail Running",
+          "Specialty Coffee",
+          "Vinyl"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "German"
+        ],
+        "height_cm": 185,
+        "photos": [
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "Border Collie",
+          "zodiac": "Aquarius"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "1h ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-26T12:00:00Z"
+      },
+      "receiver": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "status": "ACCEPTED",
+      "created_at": "2024-02-08T11:30:00Z"
+    },
+    {
+      "id": "conn-3",
+      "requester_id": "user-susan",
+      "receiver_id": "user-suresh",
+      "requester": {
+        "id": "user-susan",
+        "email": "susan.nyc@loveconnect.com",
+        "username": "susan_nyc",
+        "full_name": "Susan Thorne",
+        "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Biotech researcher by day, live indie concert lover by night. Seeking deep conversations and authentic connection. 🧬🎶",
+        "age": 28,
+        "dob": "1996-07-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "New York, NY",
+        "neighborhood": "Greenwich Village",
+        "profession": "Biotech Senior Scientist",
+        "education": "MIT",
+        "interests": [
+          "Science",
+          "Live Music",
+          "Bouldering",
+          "Podcasts",
+          "Museums"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "German"
+        ],
+        "height_cm": 167,
+        "photos": [
+          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "None",
+          "zodiac": "Cancer"
+        },
+        "is_verified": true,
+        "is_online": false,
+        "last_active": "2h ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-02-01T08:00:00Z"
+      },
+      "receiver": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "status": "PENDING",
+      "created_at": "2024-02-18T16:00:00Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv-user-1789026547196-user-suresh",
+      "participant_ids": [
+        "user-1789026547196",
+        "user-suresh"
+      ],
+      "other_user": {
+        "id": "user-1789026547196",
+        "email": "xettri01@gmail.com",
+        "password_hash": "$2b$10$dCoHQp7.Ys8iJLpMlYNn1e1hq38KZovSp8o4/dpEoyRAsd9VVkLLm",
+        "username": "sapana_xettri",
+        "full_name": "Sapana Xettri",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "New member looking for authentic dating & connections ✨",
+        "age": 21,
+        "dob": "2005-01-15",
+        "gender": "WOMAN",
+        "sexual_orientation": "Straight",
+        "dating_preference": "EVERYONE",
+        "dating_preferences": {
+          "interested_in": "EVERYONE",
+          "age_range": {
+            "min": 18,
+            "max": 45
+          },
+          "max_distance_miles": 50,
+          "only_verified": false
+        },
+        "location": "San Francisco, CA",
+        "neighborhood": "Bay Area",
+        "profession": "Professional",
+        "education": "Graduate",
+        "interests": [
+          "Dating",
+          "Coffee",
+          "Music",
+          "Travel"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "looking_for": "A meaningful, genuine connection",
+        "languages": [
+          "English"
+        ],
+        "height_cm": 170,
+        "height": "5'7\"",
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Pet lover"
+        },
+        "is_verified": false,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2026-09-10T07:49:07.196Z"
+      },
+      "other_user_id": "user-1789026547196",
+      "is_dating_match": false,
+      "unread_count": 0,
+      "updated_at": "2026-09-10T07:56:23.685Z",
+      "last_message": {
+        "id": "msg-1789026983685-e10h",
+        "conversation_id": "conv-user-1789026547196-user-suresh",
+        "sender_id": "user-suresh",
+        "receiver_id": "user-suresh",
+        "sender": {
+          "id": "user-suresh",
+          "email": "bohara.suresh8884@gmail.com",
+          "username": "suresh_bohara",
+          "full_name": "Suresh Bohara",
+          "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+          "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+          "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+          "age": 28,
+          "dob": "1996-03-22",
+          "gender": "MAN",
+          "dating_preference": "WOMEN",
+          "location": "San Francisco, CA",
+          "neighborhood": "Mission District",
+          "profession": "Lead System Administrator & Architect",
+          "education": "Stanford University",
+          "interests": [
+            "Tech & AI",
+            "Coffee Brewing",
+            "Rock Climbing",
+            "Photography",
+            "Travel",
+            "Cybersecurity"
+          ],
+          "relationship_goal": "LONG_TERM",
+          "languages": [
+            "English",
+            "Nepali",
+            "Hindi"
+          ],
+          "height_cm": 182,
+          "photos": [
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+          ],
+          "lifestyle": {
+            "drinking": "SOCIALLY",
+            "smoking": "NEVER",
+            "workout": "DAILY",
+            "pets": "1 rescue cat named Mochi",
+            "zodiac": "Aries"
+          },
+          "is_verified": true,
+          "email_verified": true,
+          "account_status": "ACTIVE",
+          "is_online": true,
+          "last_active": "Just now",
+          "role": "ADMIN",
+          "status": "ACTIVE",
+          "privacy": {
+            "profileVisibility": "PUBLIC",
+            "whoCanMessageMe": "EVERYONE",
+            "whoCanConnect": "EVERYONE",
+            "datingVisible": true,
+            "showOnlineStatus": true,
+            "readReceipts": true
+          },
+          "created_at": "2024-01-10T08:00:00Z",
+          "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+        },
+        "content": "Hey 👋",
+        "created_at": "2026-09-10T07:56:23.685Z",
+        "read_at": "2026-09-10T07:56:24.156Z"
+      }
+    },
+    {
+      "id": "conv-1",
+      "participant_ids": [
+        "user-suresh",
+        "user-sarah"
+      ],
+      "other_user": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "other_user_id": "user-sarah",
+      "is_dating_match": true,
+      "last_message": {
+        "id": "msg-3",
+        "conversation_id": "conv-1",
+        "sender_id": "user-sarah",
+        "receiver_id": "user-suresh",
+        "content": "Would love to check out that new contemporary gallery opening this Friday!",
+        "created_at": "2026-09-08T11:08:49.601Z"
+      },
+      "unread_count": 0,
+      "updated_at": "2026-09-08T11:08:49.601Z"
+    },
+    {
+      "id": "conv-2",
+      "participant_ids": [
+        "user-suresh",
+        "user-daniela"
+      ],
+      "other_user": {
+        "id": "user-daniela",
+        "email": "daniela.chef@loveconnect.com",
+        "username": "daniela_cooks",
+        "full_name": "Daniela Morales",
+        "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+        "age": 26,
+        "dob": "1998-08-30",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Kips Bay",
+        "profession": "Pastry Chef & Culinary Instructor",
+        "education": "Culinary Institute of America",
+        "interests": [
+          "Cooking",
+          "Baking",
+          "Pottery",
+          "Board Games",
+          "Farmers Markets",
+          "Cycling"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 163,
+        "photos": [
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "Cat",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-25T16:00:00Z"
+      },
+      "other_user_id": "user-daniela",
+      "is_dating_match": true,
+      "last_message": {
+        "id": "msg-4",
+        "conversation_id": "conv-2",
+        "sender_id": "user-daniela",
+        "receiver_id": "user-suresh",
+        "content": "That sourdough starter recipe was incredible, thanks Suresh!",
+        "created_at": "2026-09-07T12:08:49.601Z",
+        "read_at": "2026-09-07T13:08:49.601Z"
+      },
+      "unread_count": 0,
+      "updated_at": "2026-09-07T12:08:49.601Z"
+    },
+    {
+      "id": "conv-3",
+      "participant_ids": [
+        "user-suresh",
+        "user-meow"
+      ],
+      "other_user": {
+        "id": "user-meow",
+        "email": "meow@loveconnect.com",
+        "username": "meow_catlover",
+        "full_name": "Meow Jenkins",
+        "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Feline enthusiast, matcha lover, and creative illustrator. Looking for cozy vibes, warm laughs, and good bookstore dates. 🐾✨",
+        "age": 24,
+        "dob": "2000-04-10",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Nob Hill",
+        "profession": "Creative Illustrator & Cat Cafe Host",
+        "education": "California College of the Arts",
+        "interests": [
+          "Cats & Pets",
+          "Digital Illustration",
+          "Cozy Games",
+          "Green Tea",
+          "Indie Animation"
+        ],
+        "relationship_goal": "DATING",
+        "languages": [
+          "English",
+          "Japanese"
+        ],
+        "height_cm": 162,
+        "photos": [
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "NEVER",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "2 rescue cats",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-02-10T10:00:00Z"
+      },
+      "other_user_id": "user-meow",
+      "is_dating_match": true,
+      "unread_count": 0,
+      "updated_at": "2026-09-08T12:10:56.569Z",
+      "last_message": {
+        "id": "msg-1788869456569-jwb3",
+        "conversation_id": "conv-3",
+        "sender_id": "user-suresh",
+        "receiver_id": "user-meow",
+        "sender": {
+          "id": "user-suresh",
+          "email": "bohara.suresh8884@gmail.com",
+          "username": "suresh_bohara",
+          "full_name": "Suresh Bohara",
+          "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+          "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+          "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+          "age": 28,
+          "dob": "1996-03-22",
+          "gender": "MAN",
+          "dating_preference": "WOMEN",
+          "location": "San Francisco, CA",
+          "neighborhood": "Mission District",
+          "profession": "Lead System Administrator & Architect",
+          "education": "Stanford University",
+          "interests": [
+            "Tech & AI",
+            "Coffee Brewing",
+            "Rock Climbing",
+            "Photography",
+            "Travel",
+            "Cybersecurity"
+          ],
+          "relationship_goal": "LONG_TERM",
+          "languages": [
+            "English",
+            "Nepali",
+            "Hindi"
+          ],
+          "height_cm": 182,
+          "photos": [
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+          ],
+          "lifestyle": {
+            "drinking": "SOCIALLY",
+            "smoking": "NEVER",
+            "workout": "DAILY",
+            "pets": "1 rescue cat named Mochi",
+            "zodiac": "Aries"
+          },
+          "is_verified": true,
+          "email_verified": true,
+          "account_status": "ACTIVE",
+          "is_online": true,
+          "last_active": "Just now",
+          "role": "ADMIN",
+          "status": "ACTIVE",
+          "privacy": {
+            "profileVisibility": "PUBLIC",
+            "whoCanMessageMe": "EVERYONE",
+            "whoCanConnect": "EVERYONE",
+            "datingVisible": true,
+            "showOnlineStatus": true,
+            "readReceipts": true
+          },
+          "created_at": "2024-01-10T08:00:00Z",
+          "password_hash": "$2b$10$2mSxa9KlMBu5pF3rxfTswOCf6RAMvisbsfHDmxwK/iGKRS/YegsN."
+        },
+        "content": "What's your absolute favorite weekend spot in the city? ☕",
+        "created_at": "2026-09-08T12:10:56.569Z"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "conversation_id": "conv-1",
+      "sender_id": "user-sarah",
+      "receiver_id": "user-suresh",
+      "content": "Hey Suresh! Loved your post on Ethiopian coffee pour-over ☕",
+      "created_at": "2026-09-08T10:08:49.601Z",
+      "read_at": "2026-09-08T10:20:49.601Z"
+    },
+    {
+      "id": "msg-2",
+      "conversation_id": "conv-1",
+      "sender_id": "user-suresh",
+      "receiver_id": "user-sarah",
+      "content": "Thanks Sarah! That roaster is right by Hayes Valley. Have you been to that gallery opening on Friday?",
+      "created_at": "2026-09-08T10:38:49.601Z",
+      "read_at": "2026-09-08T10:44:49.601Z"
+    },
+    {
+      "id": "msg-3",
+      "conversation_id": "conv-1",
+      "sender_id": "user-sarah",
+      "receiver_id": "user-suresh",
+      "content": "Would love to check out that new contemporary gallery opening this Friday!",
+      "created_at": "2026-09-08T11:08:49.601Z",
+      "read_at": "2026-09-10T07:41:48.554Z"
+    },
+    {
+      "id": "msg-4",
+      "conversation_id": "conv-2",
+      "sender_id": "user-daniela",
+      "receiver_id": "user-suresh",
+      "content": "That sourdough starter recipe was incredible, thanks Suresh!",
+      "created_at": "2026-09-07T12:08:49.601Z",
+      "read_at": "2026-09-07T13:08:49.601Z"
+    },
+    {
+      "id": "msg-1788869456569-jwb3",
+      "conversation_id": "conv-3",
+      "sender_id": "user-suresh",
+      "receiver_id": "user-meow",
+      "sender": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$2mSxa9KlMBu5pF3rxfTswOCf6RAMvisbsfHDmxwK/iGKRS/YegsN."
+      },
+      "content": "What's your absolute favorite weekend spot in the city? ☕",
+      "created_at": "2026-09-08T12:10:56.569Z"
+    },
+    {
+      "id": "msg-1789026660227-5hnt",
+      "conversation_id": "conv-user-1789026547196-user-suresh",
+      "sender_id": "user-1789026547196",
+      "receiver_id": "user-suresh",
+      "sender": {
+        "id": "user-1789026547196",
+        "email": "xettri01@gmail.com",
+        "password_hash": "$2b$10$dCoHQp7.Ys8iJLpMlYNn1e1hq38KZovSp8o4/dpEoyRAsd9VVkLLm",
+        "username": "sapana_xettri",
+        "full_name": "Sapana Xettri",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "New member looking for authentic dating & connections ✨",
+        "age": 21,
+        "dob": "2005-01-15",
+        "gender": "WOMAN",
+        "sexual_orientation": "Straight",
+        "dating_preference": "EVERYONE",
+        "dating_preferences": {
+          "interested_in": "EVERYONE",
+          "age_range": {
+            "min": 18,
+            "max": 45
+          },
+          "max_distance_miles": 50,
+          "only_verified": false
+        },
+        "location": "San Francisco, CA",
+        "neighborhood": "Bay Area",
+        "profession": "Professional",
+        "education": "Graduate",
+        "interests": [
+          "Dating",
+          "Coffee",
+          "Music",
+          "Travel"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "looking_for": "A meaningful, genuine connection",
+        "languages": [
+          "English"
+        ],
+        "height_cm": 170,
+        "height": "5'7\"",
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Pet lover"
+        },
+        "is_verified": false,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2026-09-10T07:49:07.196Z"
+      },
+      "content": "Hi, Suresh!",
+      "created_at": "2026-09-10T07:51:00.227Z",
+      "read_at": "2026-09-10T07:51:47.795Z"
+    },
+    {
+      "id": "msg-1789026983685-e10h",
+      "conversation_id": "conv-user-1789026547196-user-suresh",
+      "sender_id": "user-suresh",
+      "receiver_id": "user-1789026547196",
+      "sender": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "content": "Hey 👋",
+      "created_at": "2026-09-10T07:56:23.685Z",
+      "read_at": "2026-09-10T07:56:24.156Z"
+    },
+    {
+      "id": "msg-1789027378705-ddbv",
+      "conversation_id": "conv-1",
+      "sender_id": "user-sarah",
+      "receiver_id": "user-suresh",
+      "sender": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "content": "Hey Suresh, are you free this weekend?",
+      "created_at": "2026-09-10T08:02:58.705Z"
+    },
+    {
+      "id": "msg-1789027385488-nssa",
+      "conversation_id": "conv-1",
+      "sender_id": "user-suresh",
+      "receiver_id": "user-sarah",
+      "sender": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "content": "Yes Sarah, let us check out the gallery this Saturday!",
+      "created_at": "2026-09-10T08:03:05.488Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1789027385488",
+      "user_id": "user-sarah",
+      "actor_id": "user-suresh",
+      "actor": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "type": "NEW_MESSAGE",
+      "title": "Message from Suresh Bohara",
+      "message": "Yes Sarah, let us check out the gallery this Saturday!",
+      "link_route": "/messages",
+      "is_read": false,
+      "created_at": "2026-09-10T08:03:05.488Z"
+    },
+    {
+      "id": "notif-1789027378705",
+      "user_id": "user-suresh",
+      "actor_id": "user-sarah",
+      "actor": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "type": "NEW_MESSAGE",
+      "title": "Message from Sarah Miller",
+      "message": "Hey Suresh, are you free this weekend?",
+      "link_route": "/messages",
+      "is_read": false,
+      "created_at": "2026-09-10T08:02:58.705Z"
+    },
+    {
+      "id": "notif-1789026983685",
+      "user_id": "user-suresh",
+      "actor_id": "user-suresh",
+      "actor": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$.SKHhBKD4/idxcL/5J1Cc.dww/G.HpG4680A7q5wsI0CqsaHTwzPW"
+      },
+      "type": "NEW_MESSAGE",
+      "title": "Message from Suresh Bohara",
+      "message": "Hey 👋",
+      "link_route": "/messages",
+      "is_read": false,
+      "created_at": "2026-09-10T07:56:23.685Z"
+    },
+    {
+      "id": "notif-1789026660227",
+      "user_id": "user-suresh",
+      "actor_id": "user-1789026547196",
+      "actor": {
+        "id": "user-1789026547196",
+        "email": "xettri01@gmail.com",
+        "password_hash": "$2b$10$dCoHQp7.Ys8iJLpMlYNn1e1hq38KZovSp8o4/dpEoyRAsd9VVkLLm",
+        "username": "sapana_xettri",
+        "full_name": "Sapana Xettri",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "New member looking for authentic dating & connections ✨",
+        "age": 21,
+        "dob": "2005-01-15",
+        "gender": "WOMAN",
+        "sexual_orientation": "Straight",
+        "dating_preference": "EVERYONE",
+        "dating_preferences": {
+          "interested_in": "EVERYONE",
+          "age_range": {
+            "min": 18,
+            "max": 45
+          },
+          "max_distance_miles": 50,
+          "only_verified": false
+        },
+        "location": "San Francisco, CA",
+        "neighborhood": "Bay Area",
+        "profession": "Professional",
+        "education": "Graduate",
+        "interests": [
+          "Dating",
+          "Coffee",
+          "Music",
+          "Travel"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "looking_for": "A meaningful, genuine connection",
+        "languages": [
+          "English"
+        ],
+        "height_cm": 170,
+        "height": "5'7\"",
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Pet lover"
+        },
+        "is_verified": false,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2026-09-10T07:49:07.196Z"
+      },
+      "type": "NEW_MESSAGE",
+      "title": "Message from Sapana Xettri",
+      "message": "Hi, Suresh!",
+      "link_route": "/messages",
+      "is_read": true,
+      "created_at": "2026-09-10T07:51:00.227Z"
+    },
+    {
+      "id": "notif-1788869456569",
+      "user_id": "user-meow",
+      "actor_id": "user-suresh",
+      "actor": {
+        "id": "user-suresh",
+        "email": "bohara.suresh8884@gmail.com",
+        "username": "suresh_bohara",
+        "full_name": "Suresh Bohara",
+        "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Lead Platform Administrator & System Architect. Ensuring a safe, authentic dating community on LoveConnect. ☕💻",
+        "age": 28,
+        "dob": "1996-03-22",
+        "gender": "MAN",
+        "dating_preference": "WOMEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Mission District",
+        "profession": "Lead System Administrator & Architect",
+        "education": "Stanford University",
+        "interests": [
+          "Tech & AI",
+          "Coffee Brewing",
+          "Rock Climbing",
+          "Photography",
+          "Travel",
+          "Cybersecurity"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Nepali",
+          "Hindi"
+        ],
+        "height_cm": 182,
+        "photos": [
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "1 rescue cat named Mochi",
+          "zodiac": "Aries"
+        },
+        "is_verified": true,
+        "email_verified": true,
+        "account_status": "ACTIVE",
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "ADMIN",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-10T08:00:00Z",
+        "password_hash": "$2b$10$2mSxa9KlMBu5pF3rxfTswOCf6RAMvisbsfHDmxwK/iGKRS/YegsN."
+      },
+      "type": "NEW_MESSAGE",
+      "title": "Message from Suresh Bohara",
+      "message": "What's your absolute favorite weekend spot in the city? ☕",
+      "link_route": "/messages",
+      "is_read": false,
+      "created_at": "2026-09-08T12:10:56.569Z"
+    },
+    {
+      "id": "notif-1",
+      "user_id": "user-suresh",
+      "actor_id": "user-sarah",
+      "actor": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "type": "NEW_MATCH",
+      "title": "🎉 It's a Match!",
+      "message": "You and Sarah Miller liked each other! Start a conversation now.",
+      "link_route": "/messages",
+      "is_read": false,
+      "created_at": "2024-02-18T16:45:00Z"
+    },
+    {
+      "id": "notif-2",
+      "user_id": "user-suresh",
+      "actor_id": "user-jessica",
+      "actor": {
+        "id": "user-jessica",
+        "email": "jessica.k@loveconnect.com",
+        "username": "jessica_rose",
+        "full_name": "Jessica Vance",
+        "avatar_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Architectural designer & vintage collector. Searching for authentic conversations and Sunday morning farmers market dates. 🌿🏛️",
+        "age": 27,
+        "dob": "1997-09-08",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Rose Hill",
+        "profession": "Urban Designer",
+        "education": "UC Berkeley",
+        "interests": [
+          "Architecture",
+          "Urban Gardening",
+          "Vinyl Records",
+          "Yoga",
+          "Modern Literature"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 172,
+        "photos": [
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Dog & Plant mom",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "5m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-18T14:30:00Z"
+      },
+      "type": "DATING_LIKE",
+      "title": "New Like on Dating",
+      "message": "Jessica Vance liked your dating profile!",
+      "link_route": "/likes",
+      "is_read": false,
+      "created_at": "2024-02-18T15:20:00Z"
+    },
+    {
+      "id": "notif-3",
+      "user_id": "user-suresh",
+      "actor_id": "user-daniela",
+      "actor": {
+        "id": "user-daniela",
+        "email": "daniela.chef@loveconnect.com",
+        "username": "daniela_cooks",
+        "full_name": "Daniela Morales",
+        "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Pastry chef & home cook innovator. The fastest way to my heart is a conversation about sourdough hydration and favorite bakery spots. 🥐💛",
+        "age": 26,
+        "dob": "1998-08-30",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Kips Bay",
+        "profession": "Pastry Chef & Culinary Instructor",
+        "education": "Culinary Institute of America",
+        "interests": [
+          "Cooking",
+          "Baking",
+          "Pottery",
+          "Board Games",
+          "Farmers Markets",
+          "Cycling"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "height_cm": 163,
+        "photos": [
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "SOMETIMES",
+          "pets": "Cat",
+          "zodiac": "Virgo"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-25T16:00:00Z"
+      },
+      "type": "COMMENT_POST",
+      "title": "New Comment",
+      "message": "Daniela Morales replied to your coffee meditation post.",
+      "link_route": "/home",
+      "is_read": true,
+      "created_at": "2024-02-18T14:10:00Z"
+    },
+    {
+      "id": "notif-4",
+      "user_id": "user-suresh",
+      "actor_id": "user-susan",
+      "actor": {
+        "id": "user-susan",
+        "email": "susan.nyc@loveconnect.com",
+        "username": "susan_nyc",
+        "full_name": "Susan Thorne",
+        "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Biotech researcher by day, live indie concert lover by night. Seeking deep conversations and authentic connection. 🧬🎶",
+        "age": 28,
+        "dob": "1996-07-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "New York, NY",
+        "neighborhood": "Greenwich Village",
+        "profession": "Biotech Senior Scientist",
+        "education": "MIT",
+        "interests": [
+          "Science",
+          "Live Music",
+          "Bouldering",
+          "Podcasts",
+          "Museums"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "German"
+        ],
+        "height_cm": 167,
+        "photos": [
+          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "None",
+          "zodiac": "Cancer"
+        },
+        "is_verified": true,
+        "is_online": false,
+        "last_active": "2h ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-02-01T08:00:00Z"
+      },
+      "type": "CONNECTION_REQUEST",
+      "title": "Connection Request",
+      "message": "Susan Thorne sent you a social connection request.",
+      "link_route": "/connections",
+      "is_read": false,
+      "created_at": "2024-02-18T16:00:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-1",
+      "reporter_id": "user-sarah",
+      "reporter": {
+        "id": "user-sarah",
+        "email": "sarah.miller@loveconnect.com",
+        "username": "sarah_m",
+        "full_name": "Sarah Miller",
+        "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Art director & sunset chaser. Looking for someone who enjoys gallery hopping, spicy tacos, and spontaneous road trips. 🎨🌮",
+        "age": 26,
+        "dob": "1998-05-14",
+        "gender": "WOMAN",
+        "dating_preference": "MEN",
+        "location": "San Francisco, CA",
+        "neighborhood": "Herald Square",
+        "profession": "Senior Art Director",
+        "education": "Rhode Island School of Design",
+        "interests": [
+          "Contemporary Art",
+          "Photography",
+          "Indie Music",
+          "Hiking",
+          "Cooking",
+          "Wine Tasting"
+        ],
+        "relationship_goal": "LONG_TERM",
+        "languages": [
+          "English",
+          "French"
+        ],
+        "height_cm": 168,
+        "photos": [
+          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "OFTEN",
+          "pets": "Golden Retriever lover",
+          "zodiac": "Taurus"
+        },
+        "is_verified": true,
+        "is_online": true,
+        "last_active": "Just now",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-15T10:00:00Z"
+      },
+      "target_type": "USER",
+      "target_id": "user-derek",
+      "target_title": "Derek Woods",
+      "reason": "SPAM",
+      "details": "Sent unsolicited crypto links in bio",
+      "status": "PENDING",
+      "created_at": "2026-09-08T00:08:49.601Z"
+    }
+  ],
+  "blocks": [],
+  "dating_likes": [
+    {
+      "id": "like-1",
+      "from_user_id": "user-suresh",
+      "to_user_id": "user-sarah",
+      "is_super_like": true,
+      "created_at": "2026-09-06T12:08:49.601Z"
+    },
+    {
+      "id": "like-2",
+      "from_user_id": "user-sarah",
+      "to_user_id": "user-suresh",
+      "is_super_like": false,
+      "created_at": "2026-09-06T13:08:49.601Z"
+    },
+    {
+      "id": "like-3",
+      "from_user_id": "user-jessica",
+      "to_user_id": "user-suresh",
+      "is_super_like": false,
+      "created_at": "2026-09-08T02:08:49.601Z"
+    },
+    {
+      "id": "like-4",
+      "from_user_id": "user-mirela",
+      "to_user_id": "user-suresh",
+      "is_super_like": true,
+      "created_at": "2026-09-08T07:08:49.601Z"
+    }
+  ],
+  "dating_passes": [],
+  "verification_requests": [
+    {
+      "id": "ver-1",
+      "user_id": "user-patricia",
+      "user": {
+        "id": "user-patricia",
+        "email": "patricia.h@loveconnect.com",
+        "username": "patricia_nomad",
+        "full_name": "Patricia Hayes",
+        "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+        "cover_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "bio": "Ocean lover & documentary filmmaker. Currently working on marine conservation stories. Let’s catch a sunset paddle. 🌊🎥",
+        "age": 27,
+        "dob": "1997-04-12",
+        "gender": "WOMAN",
+        "dating_preference": "EVERYONE",
+        "location": "San Francisco, CA",
+        "neighborhood": "NoMad / Marina",
+        "profession": "Documentary Filmmaker",
+        "education": "USC School of Cinematic Arts",
+        "interests": [
+          "Surfing",
+          "Filmmaking",
+          "Scuba Diving",
+          "Podcasts",
+          "Campfires",
+          "Acoustic Guitar"
+        ],
+        "relationship_goal": "DATING",
+        "languages": [
+          "English",
+          "Portuguese"
+        ],
+        "height_cm": 170,
+        "photos": [
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+        ],
+        "lifestyle": {
+          "drinking": "SOCIALLY",
+          "smoking": "NEVER",
+          "workout": "DAILY",
+          "pets": "Australian Shepherd",
+          "zodiac": "Pisces"
+        },
+        "is_verified": true,
+        "is_online": false,
+        "last_active": "30m ago",
+        "role": "USER",
+        "status": "ACTIVE",
+        "privacy": {
+          "profileVisibility": "PUBLIC",
+          "whoCanMessageMe": "EVERYONE",
+          "whoCanConnect": "EVERYONE",
+          "datingVisible": true,
+          "showOnlineStatus": true,
+          "readReceipts": true
+        },
+        "created_at": "2024-01-22T09:15:00Z"
+      },
+      "selfie_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+      "id_document_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
+      "notes": "Passport verified with live selfie capture matching profile photo.",
+      "status": "PENDING",
+      "submitted_at": "2026-09-08T06:08:49.601Z"
+    }
+  ],
+  "support_tickets": [
+    {
+      "id": "tick-1",
+      "user_id": "user-sarah",
+      "subject": "Question regarding photo reordering",
+      "category": "ACCOUNT",
+      "message": "Is it possible to set my third photo as the primary card preview?",
+      "status": "OPEN",
+      "created_at": "2026-09-08T04:08:49.601Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "title": "🎉 Welcome to LoveConnect 2.0",
+      "message": "Experience our new verified dating algorithm, real-time messaging, and enhanced safety filters!",
+      "type": "FEATURE",
+      "created_by": "user-suresh",
+      "created_at": "2026-09-06T12:08:49.601Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "audit-1",
+      "admin_id": "user-suresh",
+      "admin_name": "Suresh Bohara",
+      "action": "VERIFY_USER",
+      "target_type": "USER",
+      "target_id": "user-sarah",
+      "details": "Approved 18+ identity verification for Sarah Miller",
+      "created_at": "2026-09-07T12:08:49.601Z"
+    }
+  ],
+  "active_sessions": [
+    {
+      "id": "sess-1789026705085-l1sq",
+      "user_id": "user-suresh",
+      "device": "Laptop / Desktop",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+      "ip": "49.244.202.129, 169.254.169.126",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1789026550825-lr3n",
+      "user_id": "user-1789026547196",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1789026547199-fjjr",
+      "user_id": "user-1789026547196",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1789025879801-c0q3",
+      "user_id": "user-suresh",
+      "device": "Laptop / Desktop",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+      "ip": "49.244.202.129, 169.254.169.126",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1789025852861-2rcj",
+      "user_id": "user-suresh",
+      "device": "Laptop / Desktop",
+      "browser": "curl/7.88.1",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1788870465151-rahq",
+      "user_id": "user-suresh",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1788869372095-80f4",
+      "user_id": "user-1788869368289",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1788869368292-6qgu",
+      "user_id": "user-1788869368289",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-1",
+      "user_id": "user-suresh",
+      "device": "MacBook Pro 16\"",
+      "browser": "Chrome 124.0",
+      "ip": "198.51.100.42",
+      "location": "San Francisco, CA (US)",
+      "is_current": true,
+      "last_active": "Active now"
+    },
+    {
+      "id": "sess-2",
+      "user_id": "user-suresh",
+      "device": "iPhone 15 Pro",
+      "browser": "Mobile Safari",
+      "ip": "198.51.100.89",
+      "location": "San Francisco, CA (US)",
+      "is_current": false,
+      "last_active": "2 hours ago"
+    }
+  ],
+  "user_verifications": [],
+  "password_resets": [],
+  "stored_sessions": [
+    {
+      "id": "sess-1788869368292-6qgu",
+      "token_hash": "dd03987f61fbf8fb0e2d2c81fead14c21f9fd64605d88d1501ae8f83edb0130c",
+      "user_id": "user-1788869368289",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-08T12:09:28.292Z",
+      "last_active": "2026-09-08T12:09:28.292Z",
+      "expires_at": "2026-10-08T12:09:28.292Z"
+    },
+    {
+      "id": "sess-1788869372095-80f4",
+      "token_hash": "b1631cde73be19efc0789741ea3fa1005462c81d7a5ce245bbedbae5f1df0d72",
+      "user_id": "user-1788869368289",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-08T12:09:32.095Z",
+      "last_active": "2026-09-08T12:27:52.728Z",
+      "expires_at": "2026-10-08T12:09:32.095Z"
+    },
+    {
+      "id": "sess-1788870465151-rahq",
+      "token_hash": "2d78c7a0c4ad78531015c013cdd241684da392c87745200fbd84c5383d437a5a",
+      "user_id": "user-suresh",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-08T12:27:45.151Z",
+      "last_active": "2026-09-08T12:27:45.151Z",
+      "expires_at": "2026-10-08T12:27:45.151Z"
+    },
+    {
+      "id": "sess-1789025852861-2rcj",
+      "token_hash": "c6525e1559f5259681c6d53e34b31309b4bafcd0f68d6c7bf952121e296e239c",
+      "user_id": "user-suresh",
+      "device": "Laptop / Desktop",
+      "browser": "curl/7.88.1",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-10T07:37:32.861Z",
+      "last_active": "2026-09-10T07:37:32.861Z",
+      "expires_at": "2026-10-10T07:37:32.861Z"
+    },
+    {
+      "id": "sess-1789026547199-fjjr",
+      "token_hash": "253e48d573fc997c6fb8d25d6f70599796eb563d3a7514daadb4579202b9c6a5",
+      "user_id": "user-1789026547196",
+      "device": "Desktop / Laptop",
+      "browser": "Web Browser",
+      "ip": "127.0.0.1",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-10T07:49:07.199Z",
+      "last_active": "2026-09-10T07:49:07.199Z",
+      "expires_at": "2026-10-10T07:49:07.199Z"
+    },
+    {
+      "id": "sess-1789026705085-l1sq",
+      "token_hash": "af0c25abb9e10a66ec12e2dd36ab0e05babfb7d4ceb121efab68e106f70869ef",
+      "user_id": "user-suresh",
+      "device": "Laptop / Desktop",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+      "ip": "49.244.202.129, 169.254.169.126",
+      "location": "San Francisco, CA",
+      "created_at": "2026-09-10T07:51:45.085Z",
+      "last_active": "2026-09-10T07:51:45.085Z",
+      "expires_at": "2026-10-10T07:51:45.085Z"
+    }
+  ]
+}

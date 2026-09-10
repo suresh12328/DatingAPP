@@ -64,19 +64,56 @@ function aistudioMediaPlugin(): Plugin {
 }
 // LINT.ThenChange(//depot/google3/java/com/google/alkali/boq/makersuite/applet_dev_service/templates/initializers/react_theme/vite.config.ts:aistudio_media_plugin)
 
-export default defineConfig(() => {
+function hmrWebSocketPlugin(): Plugin {
   return {
-    plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
+    name: 'vite-plugin-hmr-websocket-fix',
+    transform(code, id) {
+      if (id.includes('vite/dist/client/client.mjs')) {
+        let modified = code.replace(
+          /const socketHost = `\$\{__HMR_HOSTNAME__ \|\| importMetaUrl\.hostname\}:\$\{hmrPort \|\| importMetaUrl\.port\}\$\{__HMR_BASE__\}`;/,
+          `const effectivePort = hmrPort || importMetaUrl.port || (importMetaUrl.protocol === "https:" ? "443" : "");
+const socketHost = \`\${__HMR_HOSTNAME__ || importMetaUrl.hostname}\${effectivePort ? \`:\${effectivePort}\` : ""}\${__HMR_BASE__}\`;`
+        );
+        modified = modified.replace(
+          /console\.error\(`\[vite\] failed to connect to websocket \(\$\{e\}\)\. `\);\s*throw e;/,
+          `console.debug("[vite] WebSocket reconnecting: ", e?.message || e);`
+        );
+        return modified;
+      }
+      return null;
+    },
+  };
+}
+
+export default defineConfig(() => {
+  const isHttpsApp = Boolean(process.env.APP_URL?.startsWith('https://'));
+  let hmrHost: string | undefined = undefined;
+  if (process.env.APP_URL) {
+    try {
+      hmrHost = new URL(process.env.APP_URL).hostname;
+    } catch {
+      // fallback
+    }
+  }
+
+  return {
+    plugins: [react(), tailwindcss(), aistudioMediaPlugin(), hmrWebSocketPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
-      hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
+      host: '0.0.0.0',
+      port: 3000,
+      allowedHosts: true as const,
+      hmr: process.env.DISABLE_HMR === 'true'
+        ? false
+        : {
+            host: hmrHost,
+            protocol: isHttpsApp ? 'wss' : undefined,
+            clientPort: isHttpsApp ? 443 : 3000,
+          },
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };

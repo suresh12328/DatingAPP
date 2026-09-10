@@ -1,7 +1,11 @@
 {
   "name": "Remix LoveConnect",
   "description": "Connect. Share. Meet. A modern social network and dating platform designed for genuine connections.",
-  "requestFramePermissions": [],
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]

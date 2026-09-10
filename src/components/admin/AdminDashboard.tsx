@@ -20,6 +20,24 @@ export const AdminDashboard: React.FC = () => {
   const { reports, deletePost, blockUser } = useApp();
   const [filterStatus, setFilterStatus] = useState<'ALL' | 'PENDING' | 'RESOLVED'>('ALL');
 
+  const isAdmin = currentUser.role === 'ADMIN' && (currentUser.id === 'user-suresh' || currentUser.email?.toLowerCase() === 'bohara.suresh8884@gmail.com');
+
+  if (!isAdmin) {
+    return (
+      <div className="max-w-xl mx-auto py-16 px-4 text-center space-y-4">
+        <div className="w-14 h-14 mx-auto rounded-3xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+          <ShieldAlert className="w-7 h-7" />
+        </div>
+        <h2 className="text-xl font-black text-zinc-100 font-heading">
+          Administrator Access Required
+        </h2>
+        <p className="text-sm text-zinc-400 leading-relaxed">
+          The Admin & Trust Moderation Center is reserved exclusively for system administrator Suresh Bohara.
+        </p>
+      </div>
+    );
+  }
+
   const filteredReports = reports.filter((r) => {
     if (filterStatus === 'ALL') return true;
     return r.status === filterStatus;

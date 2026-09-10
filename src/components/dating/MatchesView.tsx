@@ -1,21 +1,22 @@
 import React from 'react';
-import { HeartHandshake, MessageCircle, MoreVertical, Sparkles, UserX, User } from 'lucide-react';
+import { HeartHandshake, MessageCircle, Sparkles, UserX, User } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
 import { Avatar } from '../common/Avatar';
 import { EmptyState } from '../common/EmptyState';
+import { sanitizeProfile } from '../../lib/datingUtils';
 
 export const MatchesView: React.FC = () => {
   const { currentUser } = useAuth();
   const { matches, unmatch, navigate } = useApp();
 
-  if (matches.length === 0) {
+  if (!matches || matches.length === 0) {
     return (
       <EmptyState
         icon={HeartHandshake}
         title="No Mutual Matches Yet"
-        description="Swipe right on profiles in Dating mode! When someone likes you back, they will appear here."
-        actionText="Start Swiping Now"
+        description="Like profiles in Dating mode! When someone likes you back, they will appear here."
+        actionText="Start Exploring Profiles"
         onAction={() => navigate('dating')}
       />
     );
@@ -39,7 +40,9 @@ export const MatchesView: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         {matches.map((m) => {
-          const otherUser = m.user1_id === currentUser.id ? m.user2 : m.user1;
+          const rawUser = m.user1_id === currentUser?.id ? m.user2 : m.user1;
+          const otherUser = sanitizeProfile(rawUser);
+
           return (
             <div
               key={m.id}
@@ -64,13 +67,13 @@ export const MatchesView: React.FC = () => {
                     </h4>
                   </div>
                   <p className="text-xs text-zinc-400 truncate">
-                    {otherUser.profession} · {otherUser.location.split(',')[0]}
+                    {otherUser.profession} · {otherUser.location ? otherUser.location.split(',')[0] : 'Nearby'}
                   </p>
 
                   {/* Compatibility Badge */}
                   <div className="inline-flex items-center gap-1 mt-1.5 px-2.5 py-0.5 rounded-full bg-pink-500/15 border border-pink-500/20 text-pink-400 text-[10px] font-semibold">
                     <Sparkles className="w-3 h-3" />
-                    <span>{m.compatibility_score}% Compatibility</span>
+                    <span>{m.compatibility_score || 90}% Compatibility</span>
                   </div>
                 </div>
               </div>
@@ -96,7 +99,7 @@ export const MatchesView: React.FC = () => {
 
                 <button
                   onClick={() => {
-                    if (confirm(`Are you sure you want to unmatch with ${otherUser.full_name}?`)) {
+                    if (window.confirm(`Are you sure you want to unmatch with ${otherUser.full_name}?`)) {
                       unmatch(m.id);
                     }
                   }}

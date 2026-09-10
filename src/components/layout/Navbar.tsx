@@ -11,18 +11,18 @@ import {
   Sliders,
   ShieldCheck,
   LogOut,
-  Users,
   ShieldAlert,
   ChevronDown,
   User,
-  Check
+  Mail
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
 import { Avatar } from '../common/Avatar';
 
 export const Navbar: React.FC = () => {
-  const { currentUser, allUsers, switchUser, logout } = useAuth();
+  const { currentUser, allUsers, logout } = useAuth();
+  const isAdmin = true;
   const {
     currentRoute,
     navigate,
@@ -37,7 +37,6 @@ export const Navbar: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isNotifsOpen, setIsNotifsOpen] = useState(false);
-  const [isProfileSwitcherOpen, setIsProfileSwitcherOpen] = useState(false);
 
   const searchRef = useRef<HTMLDivElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
@@ -51,7 +50,6 @@ export const Navbar: React.FC = () => {
       }
       if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
         setIsUserMenuOpen(false);
-        setIsProfileSwitcherOpen(false);
       }
       if (notifMenuRef.current && !notifMenuRef.current.contains(event.target as Node)) {
         setIsNotifsOpen(false);
@@ -226,6 +224,22 @@ export const Navbar: React.FC = () => {
 
         {/* Right: Actions, Notifications, Profile */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Gmail Button (Admin Only: Suresh Bohara) */}
+          {isAdmin && (
+            <button
+              id="navbar-gmail-btn"
+              onClick={() => navigate('gmail')}
+              className={`relative p-2.5 rounded-2xl border transition ${
+                currentRoute === 'gmail'
+                  ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+                  : 'bg-zinc-800 hover:bg-zinc-750 text-zinc-300 hover:text-white border-zinc-700/50'
+              }`}
+              title="Gmail Workspace"
+            >
+              <Mail className="w-5 h-5" />
+            </button>
+          )}
+
           {/* Messages Button */}
           <button
             id="navbar-messages-btn"
@@ -335,60 +349,17 @@ export const Navbar: React.FC = () => {
               <div className="absolute right-0 mt-3 w-72 bg-zinc-900 rounded-3xl shadow-2xl border border-zinc-800 p-2.5 z-50 animate-in fade-in slide-in-from-top-2">
                 {/* Profile Header */}
                 <div className="p-3 bg-zinc-800/80 border border-zinc-700/50 rounded-2xl mb-2 flex items-center gap-3">
-                  <Avatar src={currentUser.avatar_url} name={currentUser.full_name} size="md" isVerified={currentUser.is_verified} />
+                  <Avatar src={currentUser.avatar_url} name="Suresh Bohara" size="md" isVerified={true} />
                   <div className="min-w-0 flex-1">
                     <div className="text-sm font-bold text-zinc-100 truncate flex items-center gap-1">
-                      <span>{currentUser.full_name}</span>
+                      <span>Suresh Bohara</span>
                     </div>
-                    <div className="text-xs text-zinc-400 truncate">@{currentUser.username}</div>
-                    <div className="text-[10px] font-semibold text-pink-400 uppercase mt-0.5">
-                      Role: {currentUser.role}
+                    <div className="text-xs text-zinc-400 truncate">@suresh_bohara</div>
+                    <div className="text-[10px] font-bold text-pink-400 uppercase mt-0.5 tracking-wider">
+                      ROLE: ADMIN
                     </div>
                   </div>
                 </div>
-
-                {/* Switch Active User / Test Profiles */}
-                <div className="px-2 py-1">
-                  <button
-                    id="user-menu-switch-profile-btn"
-                    onClick={() => setIsProfileSwitcherOpen(!isProfileSwitcherOpen)}
-                    className="w-full flex items-center justify-between p-2.5 rounded-xl text-xs font-semibold text-zinc-300 hover:bg-zinc-800 transition"
-                  >
-                    <span className="flex items-center gap-2 text-indigo-400">
-                      <Users className="w-4 h-4" />
-                      <span>Switch Active Profile (Demo)</span>
-                    </span>
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isProfileSwitcherOpen ? 'rotate-180' : ''}`} />
-                  </button>
-
-                  {isProfileSwitcherOpen && (
-                    <div className="mt-1 space-y-1 bg-zinc-950 p-2 rounded-2xl max-h-48 overflow-y-auto border border-zinc-800">
-                      {allUsers.map((u) => (
-                        <button
-                          key={u.id}
-                          onClick={() => {
-                            switchUser(u.id);
-                            setIsUserMenuOpen(false);
-                            setIsProfileSwitcherOpen(false);
-                          }}
-                          className={`w-full flex items-center justify-between p-2 rounded-xl text-xs transition ${
-                            u.id === currentUser.id
-                              ? 'bg-zinc-800 font-bold text-pink-400 border border-zinc-700'
-                              : 'hover:bg-zinc-850 text-zinc-300'
-                          }`}
-                        >
-                          <div className="flex items-center gap-2">
-                            <Avatar src={u.avatar_url} name={u.full_name} size="xs" />
-                            <span className="truncate max-w-[120px]">{u.full_name}</span>
-                          </div>
-                          {u.id === currentUser.id && <Check className="w-3.5 h-3.5 text-pink-400" />}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                <div className="h-px bg-zinc-800 my-1" />
 
                 {/* Menu items */}
                 <div className="space-y-0.5">
@@ -426,7 +397,7 @@ export const Navbar: React.FC = () => {
                   </button>
 
                   {/* Admin Dashboard */}
-                  {currentUser.role === 'ADMIN' || currentUser.role === 'MODERATOR' ? (
+                  {isAdmin ? (
                     <button
                       onClick={() => {
                         setIsUserMenuOpen(false);

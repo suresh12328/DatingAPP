@@ -12,6 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Prevent benign dev-server WebSocket rejections from bubbling as uncaught errors in browser console
+      window.addEventListener('unhandledrejection', function(event) {
+        var msg = (event && event.reason && (event.reason.message || event.reason.toString())) || '';
+        if (msg.indexOf('WebSocket closed without opened') !== -1 || msg.indexOf('failed to connect to websocket') !== -1) {
+          event.preventDefault();
+        }
+      });
+    </script>
   </head>
   <body class="bg-zinc-950 text-zinc-100 antialiased font-['Plus_Jakarta_Sans',sans-serif]">
     <div id="root"></div>

@@ -17,21 +17,38 @@ import {
 const API_BASE = '/api';
 
 class ApiClient {
-  private activeUserId: string = 'user-david';
+  private activeUserId: string = 'user-suresh';
+  private sessionToken: string = typeof window !== 'undefined' ? (localStorage.getItem('loveconnect_token') || '') : '';
 
-  setActiveUserId(id: string) {
-    this.activeUserId = id;
+  setActiveUserId(id?: string) {
+    this.activeUserId = id || 'user-suresh';
   }
 
   getActiveUserId(): string {
     return this.activeUserId;
   }
 
+  setSessionToken(token: string) {
+    this.sessionToken = token;
+    if (typeof window !== 'undefined') {
+      if (token) {
+        localStorage.setItem('loveconnect_token', token);
+      } else {
+        localStorage.removeItem('loveconnect_token');
+      }
+    }
+  }
+
+  getSessionToken(): string {
+    return this.sessionToken;
+  }
+
   private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
-    const headers = {
+    const headers: Record<string, string> = {
       'Content-Type': 'application/json',
       'x-user-id': this.activeUserId,
-      ...(options.headers || {})
+      ...(this.sessionToken ? { 'Authorization': `Bearer ${this.sessionToken}` } : {}),
+      ...((options.headers as Record<string, string>) || {})
     };
 
     const response = await fetch(`${API_BASE}${endpoint}`, {
@@ -41,38 +58,91 @@ class ApiClient {
 
     if (!response.ok) {
       let errorMessage = 'An error occurred';
+      let errorPayload: any = null;
       try {
-        const errorData = await response.json();
-        errorMessage = errorData.error || errorData.message || errorMessage;
+        errorPayload = await response.json();
+        errorMessage = errorPayload.error || errorPayload.message || errorMessage;
       } catch {
         errorMessage = `HTTP error ${response.status}`;
       }
-      throw new Error(errorMessage);
+      const error = new Error(errorMessage) as any;
+      error.status = response.status;
+      error.payload = errorPayload;
+      throw error;
     }
 
     return response.json();
   }
 
   // --- Auth ---
+  async checkSession(): Promise<{ success: boolean; user?: Profile; email_unverified?: boolean }> {
+    const token = this.sessionToken || (typeof window !== 'undefined' ? localStorage.getItem('loveconnect_token') : '');
+    if (!token) {
+      return { success: false };
+    }
+    try {
+      const res = await this.request<{ success: boolean; user?: Profile; email_unverified?: boolean }>('/auth/session');
+      if (res.user) {
+        this.activeUserId = res.user.id;
+      }
+      return res;
+    } catch {
+      return { success: false };
+    }
+  }
+
   async login(email: string, password?: string): Promise<{ success: boolean; user: Profile; token: string }> {
     const res = await this.request<{ success: boolean; user: Profile; token: string }>('/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password })
     });
     this.activeUserId = res.user.id;
+    if (res.token) this.setSessionToken(res.token);
     return res;
   }
 
-  async register(data: Partial<Profile> & { email: string; password?: string }): Promise<{ success: boolean; user: Profile; token: string }> {
-    const res = await this.request<{ success: boolean; user: Profile; token: string }>('/auth/register', {
+  async googleAuth(data: { email: string; full_name?: string; avatar_url?: string; google_uid?: string }): Promise<{ success: boolean; user: Profile; token: string }> {
+    const res = await this.request<{ success: boolean; user: Profile; token: string }>('/auth/google', {
       method: 'POST',
       body: JSON.stringify(data)
     });
     this.activeUserId = res.user.id;
+    if (res.token) this.setSessionToken(res.token);
     return res;
   }
 
-  async forgotPassword(email: string): Promise<{ success: boolean; message: string }> {
+  async register(data: Partial<Profile> & { email: string; password?: string; dob?: string; captcha_token?: string }): Promise<{ success: boolean; user: Profile; token: string; email_verification_required?: boolean; verification_code?: string; message?: string }> {
+    const res = await this.request<{ success: boolean; user: Profile; token: string; email_verification_required?: boolean; verification_code?: string; message?: string }>('/auth/register', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    });
+    this.activeUserId = res.user.id;
+    if (res.token) this.setSessionToken(res.token);
+    return res;
+  }
+
+  async verifyEmail(email: string, code: string): Promise<{ success: boolean; user: Profile; token: string; message: string }> {
+    const res = await this.request<{ success: boolean; user: Profile; token: string; message: string }>('/auth/verify-email', {
+      method: 'POST',
+      body: JSON.stringify({ email, code })
+    });
+    if (res.user) {
+      this.activeUserId = res.user.id;
+    }
+    if (res.token) {
+      this.setSessionToken(res.token);
+    }
+    return res;
+  }
+
+  async resendVerification(email: string): Promise<{ success: boolean; message: string; verification_code?: string }> {
+    return this.request('/auth/resend-verification', {
+      method: 'POST',
+      body: JSON.stringify({ email })
+    });
+  }
+
+  async forgotPassword(email: string): Promise<{ success: boolean; message: string; reset_code?: string }> {
     return this.request('/auth/forgot-password', {
       method: 'POST',
       body: JSON.stringify({ email })
@@ -86,11 +156,14 @@ class ApiClient {
     });
   }
 
-  async verifyEmail(email: string, code: string): Promise<{ success: boolean; message: string }> {
-    return this.request('/auth/verify-email', {
-      method: 'POST',
-      body: JSON.stringify({ email, code })
-    });
+  async logout(): Promise<void> {
+    try {
+      await this.request('/auth/logout', { method: 'POST' });
+    } catch {
+      // Ignore network failure on logout
+    } finally {
+      this.setSessionToken('');
+    }
   }
 
   // --- Users ---
@@ -193,24 +266,53 @@ class ApiClient {
     return res.conversations;
   }
 
+  async getConversation(conversationId: string): Promise<Conversation> {
+    const res = await this.request<{ conversation: Conversation }>(`/conversations/${conversationId}`);
+    return res.conversation;
+  }
+
+  async getMessagesByConversation(conversationId: string, userId?: string): Promise<Message[]> {
+    const query = userId ? `?userId=${encodeURIComponent(userId)}` : '';
+    const res = await this.request<{ messages: Message[] }>(`/conversations/${conversationId}/messages${query}`);
+    return res.messages;
+  }
+
+  async deleteConversation(conversationId: string, userId: string): Promise<void> {
+    await this.request(`/conversations/${conversationId}`, {
+      method: 'DELETE',
+      body: JSON.stringify({ userId })
+    });
+  }
+
+  async toggleMuteConversation(conversationId: string, userId: string): Promise<{ success: boolean; isMuted: boolean }> {
+    return await this.request<{ success: boolean; isMuted: boolean }>(`/conversations/${conversationId}/mute`, {
+      method: 'POST',
+      body: JSON.stringify({ userId })
+    });
+  }
+
   async getMessages(otherUserId: string, currentUserId: string): Promise<Message[]> {
     const res = await this.request<{ messages: Message[] }>(`/conversations/with/${otherUserId}?userId=${currentUserId}`);
     return res.messages;
   }
 
-  async sendMessage(senderId: string, receiverId: string, content: string, mediaUrl?: string, replyToId?: string): Promise<Message> {
+  async sendMessage(senderId: string, receiverId: string, content: string, mediaUrl?: string, replyToId?: string, conversationId?: string): Promise<Message> {
     const res = await this.request<{ success: boolean; message: Message }>('/messages/send', {
       method: 'POST',
-      body: JSON.stringify({ senderId, receiverId, content, mediaUrl, replyToId })
+      body: JSON.stringify({ senderId, receiverId, content, mediaUrl, replyToId, conversationId })
     });
     return res.message;
   }
 
-  async markMessagesRead(receiverId: string, senderId: string): Promise<void> {
-    await this.request('/messages/read', {
-      method: 'POST',
-      body: JSON.stringify({ receiverId, senderId })
-    });
+  async markMessagesRead(receiverId: string, senderId: string, conversationId?: string): Promise<void> {
+    try {
+      await this.request('/messages/read', {
+        method: 'POST',
+        body: JSON.stringify({ receiverId, senderId, conversationId })
+      });
+    } catch (err) {
+      console.warn('Backend markMessagesRead sync warning (safe fallback):', err);
+    }
   }
 
   async unsendMessage(messageId: string, userId: string): Promise<void> {
@@ -311,6 +413,16 @@ class ApiClient {
     return res.reels;
   }
 
+  async getPaginatedReels(page: number = 1, limit: number = 4): Promise<{
+    reels: Reel[];
+    pagination: { page: number; limit: number; total: number; hasMore: boolean; totalPages: number };
+  }> {
+    return await this.request<{
+      reels: Reel[];
+      pagination: { page: number; limit: number; total: number; hasMore: boolean; totalPages: number };
+    }>(`/reels?page=${page}&limit=${limit}`);
+  }
+
   async createReel(userId: string, videoUrl: string, caption: string, musicTitle?: string): Promise<Reel> {
     const res = await this.request<{ success: boolean; reel: Reel }>('/reels', {
       method: 'POST',
@@ -319,8 +431,35 @@ class ApiClient {
     return res.reel;
   }
 
-  async likeReel(reelId: string): Promise<void> {
-    await this.request(`/reels/${reelId}/like`, { method: 'POST' });
+  async likeReel(reelId: string): Promise<any> {
+    return await this.request(`/reels/${reelId}/like`, { method: 'POST' });
+  }
+
+  async saveReel(reelId: string): Promise<any> {
+    return await this.request(`/reels/${reelId}/save`, { method: 'POST' });
+  }
+
+  async shareReel(reelId: string): Promise<any> {
+    return await this.request(`/reels/${reelId}/share`, { method: 'POST' });
+  }
+
+  async getReelComments(reelId: string): Promise<any[]> {
+    const res = await this.request<{ comments: any[] }>(`/reels/${reelId}/comments`);
+    return res.comments;
+  }
+
+  async commentOnReel(reelId: string, userId: string, content: string): Promise<any> {
+    return await this.request(`/reels/${reelId}/comments`, {
+      method: 'POST',
+      body: JSON.stringify({ userId, content })
+    });
+  }
+
+  async deleteReel(reelId: string, userId: string): Promise<void> {
+    await this.request(`/reels/${reelId}`, {
+      method: 'DELETE',
+      body: JSON.stringify({ userId })
+    });
   }
 
   // --- Connections ---

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { X, Sliders, Check } from 'lucide-react';
+import { X, Sliders } from 'lucide-react';
 import { DatingPreferences } from '../../types';
+import { getDefaultDatingPreferences } from '../../lib/datingUtils';
 
 interface DatingFiltersModalProps {
-  initialFilters: DatingPreferences;
+  initialFilters?: Partial<DatingPreferences> | null;
   onApply: (filters: DatingPreferences) => void;
   onClose: () => void;
 }
@@ -13,13 +14,15 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
   onApply,
   onClose
 }) => {
+  const defaults = getDefaultDatingPreferences(initialFilters as any);
+
   const [interestedIn, setInterestedIn] = useState<'WOMEN' | 'MEN' | 'EVERYONE'>(
-    initialFilters.interested_in
+    defaults.interested_in
   );
-  const [minAge, setMinAge] = useState(initialFilters.age_range.min);
-  const [maxAge, setMaxAge] = useState(initialFilters.age_range.max);
-  const [maxDistance, setMaxDistance] = useState(initialFilters.max_distance_miles);
-  const [onlyVerified, setOnlyVerified] = useState(initialFilters.only_verified);
+  const [minAge, setMinAge] = useState<number>(defaults.age_range.min);
+  const [maxAge, setMaxAge] = useState<number>(defaults.age_range.max);
+  const [maxDistance, setMaxDistance] = useState<number>(defaults.max_distance_miles);
+  const [onlyVerified, setOnlyVerified] = useState<boolean>(defaults.only_verified);
 
   const handleApply = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,7 +30,12 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
       interested_in: interestedIn,
       age_range: { min: minAge, max: maxAge },
       max_distance_miles: maxDistance,
-      only_verified: onlyVerified
+      only_verified: onlyVerified,
+      genderPreference: interestedIn,
+      ageRange: [minAge, maxAge],
+      distanceKm: Math.round(maxDistance * 1.6),
+      relationshipGoals: defaults.relationshipGoals || ['LONG_TERM', 'DATING'],
+      verifiedOnly: onlyVerified
     });
     onClose();
   };
@@ -38,6 +46,7 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-2 text-zinc-400 hover:text-zinc-100 rounded-full hover:bg-zinc-800 transition"
+          aria-label="Close"
         >
           <X className="w-5 h-5" />
         </button>
@@ -48,10 +57,10 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
           </div>
           <div>
             <h3 className="text-lg font-bold text-zinc-100 font-heading">
-              Dating Preferences
+              Match Preferences
             </h3>
             <p className="text-xs text-zinc-400">
-              Customize who you see in your discover deck
+              Customize who appears in your Discover deck
             </p>
           </div>
         </div>
@@ -119,7 +128,7 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
               />
             </div>
             <div className="flex justify-between text-[10px] text-zinc-500 mt-1">
-              <span>18 yo (Strict 18+ policy)</span>
+              <span>18 yo (Verified 18+)</span>
               <span>70+ yo</span>
             </div>
           </div>
@@ -146,7 +155,7 @@ export const DatingFiltersModal: React.FC<DatingFiltersModalProps> = ({
           </div>
 
           {/* Only Verified */}
-          <div className="flex items-center justify-between p-3.5 bg-zinc-800/80 rounded-2xl border border-zinc-750">
+          <div className="flex items-center justify-between p-3.5 bg-zinc-800/80 rounded-2xl border border-zinc-700/60">
             <div>
               <div className="text-xs font-bold text-zinc-200">
                 Only Verified Profiles

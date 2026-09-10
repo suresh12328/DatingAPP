@@ -14,7 +14,8 @@ import {
   ShieldAlert,
   HelpCircle,
   LogOut,
-  Sparkles
+  Sparkles,
+  Mail
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp, AppRoute } from '../../context/AppContext';
@@ -22,6 +23,7 @@ import { Avatar } from '../common/Avatar';
 
 export const LeftSidebar: React.FC = () => {
   const { currentUser, logout } = useAuth();
+  const isAdmin = currentUser.role === 'ADMIN' && (currentUser.id === 'user-suresh' || currentUser.email?.toLowerCase() === 'bohara.suresh8884@gmail.com');
   const {
     currentRoute,
     navigate,
@@ -44,6 +46,7 @@ export const LeftSidebar: React.FC = () => {
     { id: 'sb-matches', route: 'matches', label: 'Mutual Matches', icon: HeartHandshake, badge: matches.length > 0 ? matches.length : undefined },
     { id: 'sb-likes', route: 'likes', label: 'Likes You', icon: Heart, color: 'text-pink-500' },
     { id: 'sb-messages', route: 'messages', label: 'Messages', icon: MessageCircle, badge: unreadMessagesCount > 0 ? unreadMessagesCount : undefined },
+    ...(isAdmin ? [{ id: 'sb-gmail', route: 'gmail' as AppRoute, label: 'Gmail Workspace', icon: Mail, color: 'text-rose-400' }] : []),
     { id: 'sb-friends', route: 'connections', label: 'Friends & Connections', icon: Users },
     { id: 'sb-reels', route: 'reels', label: 'Reels & Videos', icon: Film },
     { id: 'sb-saved', route: 'saved', label: 'Saved Posts', icon: Bookmark },
@@ -126,8 +129,8 @@ export const LeftSidebar: React.FC = () => {
           );
         })}
 
-        {/* Admin Dashboard link */}
-        {(currentUser.role === 'ADMIN' || currentUser.role === 'MODERATOR') && (
+        {/* Admin Dashboard link (Admin Only: Suresh Bohara) */}
+        {isAdmin && (
           <button
             id="sidebar-admin-link"
             onClick={() => navigate('admin')}

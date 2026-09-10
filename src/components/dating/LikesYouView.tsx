@@ -1,24 +1,24 @@
 import React from 'react';
-import { Heart, X, Sparkles, MapPin } from 'lucide-react';
+import { Heart, X, Sparkles, MapPin, User } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
 import { store } from '../../lib/storage';
-import { Avatar } from '../common/Avatar';
 import { EmptyState } from '../common/EmptyState';
+import { sanitizeProfile } from '../../lib/datingUtils';
 
 export const LikesYouView: React.FC = () => {
   const { currentUser } = useAuth();
   const { likeProfile, passProfile, navigate } = useApp();
 
-  const likesReceived = store.getLikesReceived();
+  const rawLikesReceived = store.getLikesReceived();
 
-  if (likesReceived.length === 0) {
+  if (!rawLikesReceived || rawLikesReceived.length === 0) {
     return (
       <EmptyState
         icon={Heart}
         title="No Incoming Likes Yet"
         description="When other members swipe right or Super Like your profile, they will show up here for you to match with!"
-        actionText="Boost Profile / Explore"
+        actionText="Explore Profiles"
         onAction={() => navigate('dating')}
       />
     );
@@ -36,12 +36,15 @@ export const LikesYouView: React.FC = () => {
           </p>
         </div>
         <span className="px-3 py-1 bg-rose-500/15 border border-rose-500/30 text-rose-400 text-xs font-bold rounded-full">
-          {likesReceived.length} {likesReceived.length === 1 ? 'Person' : 'People'}
+          {rawLikesReceived.length} {rawLikesReceived.length === 1 ? 'Person' : 'People'}
         </span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {likesReceived.map((user) => {
+        {rawLikesReceived.map((rawUser) => {
+          const user = sanitizeProfile(rawUser);
+          const isSuperLike = Boolean((rawUser as any).is_super_like);
+
           return (
             <div
               key={user.id}
@@ -57,7 +60,7 @@ export const LikesYouView: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-black/30" />
 
-                {user.is_super_like && (
+                {isSuperLike && (
                   <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-indigo-600 text-white text-[10px] font-bold flex items-center gap-1 shadow-md">
                     <Sparkles className="w-3 h-3" />
                     <span>Super Liked You</span>
@@ -70,7 +73,7 @@ export const LikesYouView: React.FC = () => {
                   </div>
                   <div className="text-xs text-zinc-300 flex items-center gap-1 drop-shadow-sm">
                     <MapPin className="w-3 h-3 text-pink-400" />
-                    <span>{user.neighborhood || user.location.split(',')[0]}</span>
+                    <span>{user.neighborhood || (user.location ? user.location.split(',')[0] : 'Nearby')}</span>
                   </div>
                 </div>
               </div>
@@ -82,7 +85,7 @@ export const LikesYouView: React.FC = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-1">
-                  {user.interests.slice(0, 3).map((i) => (
+                  {(user.interests || []).slice(0, 3).map((i) => (
                     <span
                       key={i}
                       className="px-2 py-0.5 rounded-full bg-zinc-800 border border-zinc-700 text-[10px] font-medium text-zinc-300"
@@ -101,6 +104,14 @@ export const LikesYouView: React.FC = () => {
                     title="Pass"
                   >
                     <X className="w-4 h-4" />
+                  </button>
+
+                  <button
+                    onClick={() => navigate('profile', { username: user.username })}
+                    className="p-2.5 rounded-2xl bg-zinc-800 hover:bg-zinc-750 text-zinc-300 hover:text-white transition border border-zinc-700/60"
+                    title="View Profile"
+                  >
+                    <User className="w-4 h-4" />
                   </button>
 
                   <button

@@ -14,13 +14,17 @@ import {
   Globe,
   Users,
   Lock,
-  Check
+  Check,
+  Play,
+  Maximize2
 } from 'lucide-react';
 import { Post } from '../../types';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
 import { Avatar } from '../common/Avatar';
 import { CommentSection } from './CommentSection';
+import { MediaViewer, MediaViewerItem } from '../common/MediaViewer';
+import { ConfirmDeleteModal } from '../common/ConfirmDeleteModal';
 
 interface PostCardProps {
   post: Post;
@@ -34,6 +38,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
     deletePost,
     editPost,
     openReportModal,
+    showToast,
     navigate
   } = useApp();
 
@@ -42,9 +47,15 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editContent, setEditContent] = useState(post.content);
   const [copiedShare, setCopiedShare] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  // Lightbox viewer state
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [viewerIndex, setViewerIndex] = useState(0);
 
   const isMyPost = post.user_id === currentUser.id;
-  const isAdmin = currentUser.role === 'ADMIN' || currentUser.role === 'MODERATOR';
+  const hasVideoMedia = post.media?.some(m => m.type === 'video');
 
   const handleLike = () => {
     likePost(post.id);
@@ -54,9 +65,22 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
     toggleSavePost(post.id);
   };
 
-  const handleDelete = () => {
-    deletePost(post.id);
+  const handleDeleteClick = () => {
     setShowMenu(false);
+    setShowDeleteModal(true);
+  };
+
+  const handleConfirmDelete = async () => {
+    setIsDeleting(true);
+    try {
+      await deletePost(post.id);
+      showToast(hasVideoMedia ? 'Video deleted globally across all devices' : 'Post deleted successfully', 'success');
+      setShowDeleteModal(false);
+    } catch (err: any) {
+      console.error('Delete post error:', err);
+      showToast(err.message || 'Failed to delete post. Please try again.', 'error');
+      setIsDeleting(false);
+    }
   };
 
   const handleSaveEdit = () => {
@@ -126,9 +150,9 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                   <span className="ml-1">·</span>
                 </span>
               )}
-              {post.privacy === 'PUBLIC' && <Globe className="w-3 h-3 text-zinc-400" title="Public" />}
-              {post.privacy === 'CONNECTIONS_ONLY' && <Users className="w-3 h-3 text-zinc-400" title="Connections" />}
-              {post.privacy === 'PRIVATE' && <Lock className="w-3 h-3 text-zinc-400" title="Private" />}
+              {post.privacy === 'PUBLIC' && <span title="Public"><Globe className="w-3 h-3 text-zinc-400" /></span>}
+              {post.privacy === 'CONNECTIONS_ONLY' && <span title="Connections"><Users className="w-3 h-3 text-zinc-400" /></span>}
+              {post.privacy === 'PRIVATE' && <span title="Private"><Lock className="w-3 h-3 text-zinc-400" /></span>}
             </div>
           </div>
         </div>
@@ -157,23 +181,14 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                     Edit Post
                   </button>
                   <button
-                    onClick={handleDelete}
+                    id={`post-delete-btn-${post.id}`}
+                    onClick={handleDeleteClick}
                     className="w-full flex items-center gap-2 px-3 py-2 text-xs font-semibold text-rose-400 hover:bg-rose-950/40 rounded-xl transition"
                   >
                     <Trash2 className="w-3.5 h-3.5" />
                     Delete Post
                   </button>
                 </>
-              )}
-
-              {isAdmin && !isMyPost && (
-                <button
-                  onClick={handleDelete}
-                  className="w-full flex items-center gap-2 px-3 py-2 text-xs font-semibold text-amber-400 hover:bg-amber-950/40 rounded-xl transition"
-                >
-                  <Trash2 className="w-3.5 h-3.5" />
-                  Admin Remove
-                </button>
               )}
 
               {!isMyPost && (
@@ -225,24 +240,67 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
 
       {/* Media gallery */}
       {post.media && post.media.length > 0 && (
-        <div className="rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 max-h-[480px]">
-          {post.media.length === 1 ? (
-            <img
-              src={post.media[0].url}
-              alt="Post media"
-              referrerPolicy="no-referrer"
-              className="w-full h-auto max-h-[480px] object-cover hover:scale-[1.01] transition duration-300"
-            />
+        <div className="rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800">
+          {/* If single video */}
+          {post.media.length === 1 && (post.media[0].type === 'video' || /\.(mp4|webm|mov)$/i.test(post.media[0].url)) ? (
+            <div className="relative bg-black max-h-[480px] flex items-center justify-center">
+              <video
+                src={post.media[0].url}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full max-h-[480px] object-contain rounded-2xl"
+              />
+            </div>
+          ) : post.media.length === 1 ? (
+            /* Single Image */
+            <div
+              className="relative cursor-pointer group overflow-hidden max-h-[500px]"
+              onClick={() => {
+                setViewerIndex(0);
+                setViewerOpen(true);
+              }}
+            >
+              <img
+                src={post.media[0].url}
+                alt="Post media"
+                referrerPolicy="no-referrer"
+                className="w-full h-auto max-h-[500px] object-cover group-hover:scale-[1.01] transition duration-300"
+              />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center pointer-events-none">
+                <span className="p-2 rounded-full bg-black/60 text-white backdrop-blur-xs">
+                  <Maximize2 className="w-5 h-5" />
+                </span>
+              </div>
+            </div>
           ) : (
-            <div className="grid grid-cols-2 gap-1.5">
+            /* Multi-Image Grid */
+            <div className={`grid gap-1.5 ${
+              post.media.length === 2
+                ? 'grid-cols-2'
+                : post.media.length === 3
+                ? 'grid-cols-3'
+                : 'grid-cols-2 sm:grid-cols-3'
+            }`}>
               {post.media.map((m, idx) => (
-                <img
+                <div
                   key={idx}
-                  src={m.url}
-                  alt="Post media"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-56 object-cover hover:scale-105 transition duration-300"
-                />
+                  onClick={() => {
+                    setViewerIndex(idx);
+                    setViewerOpen(true);
+                  }}
+                  className="relative aspect-square overflow-hidden bg-zinc-900 cursor-pointer group"
+                >
+                  <img
+                    src={m.url}
+                    alt={`Post attachment ${idx + 1}`}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center pointer-events-none">
+                    <Maximize2 className="w-4 h-4 text-white" />
+                  </div>
+                </div>
               ))}
             </div>
           )}
@@ -341,6 +399,40 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
           comments={post.comments || []}
         />
       )}
+
+      {/* Lightbox Media Viewer */}
+      {post.media && post.media.length > 0 && (
+        <MediaViewer
+          isOpen={viewerOpen}
+          onClose={() => setViewerOpen(false)}
+          items={post.media.map((m) => ({
+            url: m.url,
+            type: m.type === 'video' || /\.(mp4|webm|mov)$/i.test(m.url) ? 'video' : 'image',
+            title: post.content ? post.content.slice(0, 50) : undefined,
+            caption: post.content,
+            authorName: post.author.full_name,
+            authorAvatar: post.author.avatar_url,
+            createdAt: post.created_at
+          }))}
+          initialIndex={viewerIndex}
+        />
+      )}
+
+      {/* Confirmation Modal */}
+      <ConfirmDeleteModal
+        isOpen={showDeleteModal}
+        isDeleting={isDeleting}
+        title={hasVideoMedia ? "Delete Video Post" : "Delete Post"}
+        description={hasVideoMedia 
+          ? "Are you sure you want to permanently delete this video post? The video file, related thumbnails, and all associated likes and comments will be permanently deleted across all your devices."
+          : "Are you sure you want to permanently delete this post? All media, likes, comments, and saves associated with this post will be removed."
+        }
+        confirmText={hasVideoMedia ? "Delete Video Post" : "Delete Post"}
+        onConfirm={handleConfirmDelete}
+        onClose={() => {
+          if (!isDeleting) setShowDeleteModal(false);
+        }}
+      />
     </article>
   );
 };
